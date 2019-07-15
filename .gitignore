@@ -6,5 +6,6 @@
 .vscode
 build
 _build
+*.mo
 
 .ipynb_checkpoints
