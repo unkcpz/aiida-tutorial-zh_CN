@@ -1,0 +1,3 @@
+[submodule "aiida-tutorials"]
+	path = aiida-tutorials
+	url = https://github.com/aiidateam/aiida-tutorials

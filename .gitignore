@@ -1,0 +1,10 @@
+*~
+.DS_Store
+*.swp
+*.pyc
+
+.vscode
+build
+_build
+
+.ipynb_checkpoints
