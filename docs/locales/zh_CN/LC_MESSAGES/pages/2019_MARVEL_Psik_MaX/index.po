@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE (Theory and Simulation of Materials (THEOS) and National Centre for Computational Design and Discovery of Novel Materials (NCCR MARVEL)), Switzerland and ROBERT BOSCH LLC, USA. All rights reserved
+# This file is distributed under the same license as the AiiDA Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AiiDA Tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 06:22+0000\n"
+"PO-Revision-Date: 2019-07-15 05:17+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/index.rst:2
+msgid "Prerequisite"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/index.rst:2
+msgid "Version"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/index.rst:4
+msgid "Virtual Machine"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/index.rst:4
+msgid "`Quantum Mobile 19.05.0-tutorial`_"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/index.rst:6
+msgid "python packages"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/index.rst:6
+msgid ""
+"`aiida-core 1.0.0b3`_, `aiida-quantumespresso 3.0.0a3`_, `aiidalab 19.05`_"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/index.rst:8
+msgid "codes"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/index.rst:8
+msgid "`Quantum Espresso 6.3`_"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/index.rst:17
+msgid ""
+"These are the notes of the `AiiDA tutorial on writing reproducible workflows"
+" for computational materials science <http://www.aiida.net/tutorial-"
+"reproducible-workflows/>`__  which took place from May 21-24, 2019 at EPF "
+"Lausanne, Switzerland."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/index.rst:19
+msgid ""
+"While participants of the tutorial used virtual machines on a cloud service,"
+" you can follow the tutorial just as well using the Quantum Mobile "
+"VirtualBox image linked above."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/index.rst:22
+msgid "Writing reproducible workflows for computational materials science"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/index.rst:25
+msgid "Sections"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/index.rst:40
+msgid "Appendices"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/index.rst:53
+msgid "Acknowledgements"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/index.rst:55
+msgid ""
+"The `AiiDA tutorial on writing reproducible workflows for computational "
+"materials science <http://www.aiida.net/tutorial-reproducible-workflows/>`__"
+"  was made possible by support from MARVEL, Psi-k, MaX, swissuniversitites "
+"and INTERSECT, and kindly hosted by EPFL."
+msgstr ""

@@ -1,0 +1,145 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE (Theory and Simulation of Materials (THEOS) and National Centre for Computational Design and Discovery of Novel Materials (NCCR MARVEL)), Switzerland and ROBERT BOSCH LLC, USA. All rights reserved
+# This file is distributed under the same license as the AiiDA Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AiiDA Tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 06:22+0000\n"
+"PO-Revision-Date: 2019-07-15 05:14+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/python-interface.md:1
+msgid "The AiiDA python interface"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/python-interface.md:3
+msgid ""
+"AiiDA is written in python, and while the verdi command line interface "
+"provides handy shortcuts for everyday operations, AiiDA provides its full "
+"power only via the python interface."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/python-interface.md:7
+msgid "Using the python interface"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/python-interface.md:9
+msgid "There are three practical ways of using the python interface:"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/python-interface.md:11
+msgid "python scripts that import the aiida python package"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/python-interface.md:12
+msgid "the interactive verdi shell"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/python-interface.md:13
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/python-interface.md:37
+msgid "Jupyter notebooks"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/python-interface.md:15
+msgid ""
+"For this tutorial we recommend using the verdi shell (explained below) but "
+"if you're already familiar with Jupyter notebooks you may use those as well."
+" We will get back to option 1 (python scripts) towards the end of the "
+"tutorial."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/python-interface.md:19
+msgid "The verdi shell"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/python-interface.md:21
+msgid ""
+"The verdi shell is a customized ipython shell, where all the AiiDA classes, "
+"methods and functions are already accessible. Type in the terminal"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/python-interface.md:28
+msgid ""
+"The verdi shell is handy for everyday AiiDA-based operations, e.g. creating,"
+" querying and using AiiDA objects. You would typically use two terminals, "
+"one for the verdi shell and one to execute bash commands."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/python-interface.md:33
+msgid ""
+"NotePress Ctrl+Shift+T in order to open a new terminal tab.Don't forget to "
+"workon aiida in the new tab before using the shell."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/python-interface.md:39
+msgid "Start a jupyter notebook server:"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/python-interface.md:45
+msgid ""
+"In the new browser window, select New -> Python 2 (top right corner).You are"
+" now inside a jupyter notebook, consisting of cells where you can type "
+"portions of python code. The code will not be executed until you press "
+"Shift+Enter from within a cell."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/python-interface.md:50
+msgid ""
+"In order to load the same environment as in the verdi shell, type %aiida in "
+"the first cell and execute it."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/python-interface.md:53
+msgid ""
+"NoteThe verdi shell and the jupyter notebook are completely equivalent. Use "
+"either according to your personal preference."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/python-interface.md:57
+msgid ""
+"You will still need sometimes to type command-line instructions in the "
+"terminal. Either keep a terminal open on the side or use execute terminal "
+"commands directly from the verdi shell or jupyter notebook by prefixing the "
+"command by an exclamation mark:"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/python-interface.md:67
+msgid "Loading a node"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/python-interface.md:69
+msgid ""
+"Most AiiDA objects are represented by nodes, identified in the database by "
+"their PK number (an integer). You can access a node using the following "
+"command in the shell:"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/python-interface.md:76
+msgid ""
+"NoteIn the following, we'll use a dark gray border to indicate python code "
+"and a light gray border to indicate the terminal."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/python-interface.md:80
+msgid ""
+"Load one of the calculation nodes you played around with before. Then get "
+"the density computed with the command"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/python-interface.md:87
+msgid "You can also type"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/python-interface.md:93
+msgid ""
+"and then press TAB to directly access the keys of the output dictionary."
+msgstr ""

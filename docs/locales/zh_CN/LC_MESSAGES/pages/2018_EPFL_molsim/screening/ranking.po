@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE (Theory and Simulation of Materials (THEOS) and National Centre for Computational Design and Discovery of Novel Materials (NCCR MARVEL)), Switzerland and ROBERT BOSCH LLC, USA. All rights reserved
+# This file is distributed under the same license as the AiiDA Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AiiDA Tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 06:22+0000\n"
+"PO-Revision-Date: 2019-07-15 05:20+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../docs/pages/2018_EPFL_molsim/screening/ranking.md:1
+msgid "Ranking the structures"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/ranking.md:4
+msgid ""
+"We've prepared an interactive jupyter app that helps you with ranking and "
+"visualizing the structures. Use at your convenience."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/ranking.md:7
+msgid "Installation"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/ranking.md:8
+msgid "To get the app please download it using the following link:"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/ranking.md:15
+msgid ""
+"If you are working with Quantum Mobile, simply place the extracted folder "
+"inside /project/apps and it should already work."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/ranking.md:18
+msgid ""
+"In case you have configured AiiDA on your own computer please install "
+"additional packages:"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/ranking.md:27
+msgid "Usage"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/ranking.md:29
+msgid "To use the application please open"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/ranking.md:31
+msgid "dc_group.ipynb, if you followed the quick and simple route"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/ranking.md:32
+msgid "dc_wf.ipynb, if you followed the elegant and robust route"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/ranking.md:34
+msgid "Switch to the Appmode for the convenience."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/ranking.md:36
+msgid ""
+"For the users of Quantum Mobile it is enough to launch \"Jupyter Apps\" icon"
+" on the desktop and chose corresponding notebook from the \"Molsim course\" "
+"app."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/ranking.md:39
+msgid ""
+"Once you have opened the notebook, specify the group of structures (if "
+"required) and press the \"Plot\" button."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/ranking.md:42
+msgid ""
+"We recommend to use the \"bokeh\" framework as it shows the corresponding "
+"structure pk once you put the cursor on top of a point."
+msgstr ""

@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE (Theory and Simulation of Materials (THEOS) and National Centre for Computational Design and Discovery of Novel Materials (NCCR MARVEL)), Switzerland and ROBERT BOSCH LLC, USA. All rights reserved
+# This file is distributed under the same license as the AiiDA Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AiiDA Tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 06:22+0000\n"
+"PO-Revision-Date: 2019-07-15 05:16+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/multiply-uc.rst:2
+msgid "Multiplying the unit cell"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/multiply-uc.rst:4
+msgid ""
+"You learned that the lengths of your simulation box should bigger than twice"
+" the cutoff value.\\\\ Therefore, for an orthogonal cell you should multiply"
+" you cell until its length meets this criterion in every direction."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/multiply-uc.rst:9
+msgid "But what if the cell is not orthogonal?"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/multiply-uc.rst:11
+msgid ""
+"You should not speak in terms of \"lengths\" but in terms of \"perpendicular"
+" lengths\", as shown in the figure for the two-dimensional case. While in "
+"the orthogonal case one can simplify pwa = b and pwb = a, in a tilted unit "
+"cell we have to compute pwa and pwb and then evaluate if the cell needs to "
+"be expanded, and the multiplication coefficients."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/multiply-uc.rst:20
+msgid "Perpendicular widths in orthogonal and tilted 2D cells."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/multiply-uc.rst:22
+msgid ""
+"This explains why we need so much math in the function "
+"``multiply_unit_cell(cif)``, to compute the Raspa input \"UnitCells\"."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/multiply-uc.rst:25
+msgid ""
+"Note that if you do not multiply correctly the unit cell, Raspa will "
+"complain in the output:"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/multiply-uc.rst:32
+msgid ""
+"and you will (usually) get an uptake that is less then the correct one. Why?"
+msgstr ""

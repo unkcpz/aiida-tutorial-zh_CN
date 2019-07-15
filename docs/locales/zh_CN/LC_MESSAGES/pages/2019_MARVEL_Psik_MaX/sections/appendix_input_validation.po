@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE (Theory and Simulation of Materials (THEOS) and National Centre for Computational Design and Discovery of Novel Materials (NCCR MARVEL)), Switzerland and ROBERT BOSCH LLC, USA. All rights reserved
+# This file is distributed under the same license as the AiiDA Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AiiDA Tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 06:22+0000\n"
+"PO-Revision-Date: 2019-07-15 05:18+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/appendix_input_validation.rst:1
+msgid ""
+"*These appendices consist of optional exercises, and are mentioned in "
+"earlier parts of the tutorial. Go through them only if you have time.*"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/appendix_input_validation.rst:4
+msgid "Calculation input validation"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/appendix_input_validation.rst:6
+msgid ""
+"This appendix shows additional ways to debug errors with Quantum ESPRESSO, "
+"namely how to take advantage of a powerful tool to validate the input to "
+"Quantum ESPRESSO and possibly suggest the correct name to misspelled "
+"keywords."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/appendix_input_validation.rst:10
+msgid ""
+"There are various reasons why you might end up providing a wrong input to a "
+"Quantum ESPRESSO calculation. Let's check for example this input dictionary,"
+" where we inserted two mistakes:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/appendix_input_validation.rst:30
+msgid "The two mistakes in the dictionary are the following:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/appendix_input_validation.rst:32
+msgid "We wrote a wrong namelist name (``CTRL`` instead of ``CONTROL``)."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/appendix_input_validation.rst:33
+msgid ""
+"We inserted the number of atoms explicitly: while that is indeed how the "
+"number of atoms is specified in Quantum ESPRESSO, in AiiDA this key is "
+"reserved by the system, since this information is already contained within "
+"the StructureData."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/appendix_input_validation.rst:37
+msgid ""
+"After we correct the dictionary ``parameters_dict``, we could run the "
+"calculation directly. Alternatively, we can use a tool of the the `aiida-"
+"quantumespresso` plugin, the 'input helper', which checks the inputs before "
+"submitting the calculation."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/appendix_input_validation.rst:41
+msgid ""
+"In your script, after you define ``parameters_dict``, you can validate it "
+"with the following command (note that you need to pass also an input crystal"
+" structure, ``structure``, to allow the validator to perform all the needed "
+"checks):"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/appendix_input_validation.rst:52
+msgid ""
+"The ``input_helper``  method will check for the correctness of the input "
+"parameters. If misspelling or incorrect keys are detected, the method raises"
+" an exception, which stops the script before submitting the calculation and "
+"thus allows for a more effective debugging."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/appendix_input_validation.rst:56
+msgid ""
+"With this utility, you can also provide a list of keys, without providing "
+"the namelists (useful if you don't remember where to put some variables in "
+"the input file). Hence, you can provide to ``input_helper`` a dictionary "
+"like this one:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/appendix_input_validation.rst:77
+msgid "If you print ``validated_dict``, it will look like the following:"
+msgstr ""

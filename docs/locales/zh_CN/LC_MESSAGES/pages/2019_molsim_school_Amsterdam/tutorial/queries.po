@@ -1,0 +1,205 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE (Theory and Simulation of Materials (THEOS) and National Centre for Computational Design and Discovery of Novel Materials (NCCR MARVEL)), Switzerland and ROBERT BOSCH LLC, USA. All rights reserved
+# This file is distributed under the same license as the AiiDA Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AiiDA Tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 06:22+0000\n"
+"PO-Revision-Date: 2019-07-15 05:14+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/queries.md:1
+msgid "Querying the AiiDA database {#sec:querybuilder}"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/queries.md:4
+msgid ""
+"We will now learn how to query the AiiDA database using the python "
+"interface. Queries are, in essence, questions to your database and you will "
+"use the answers you obtain in order to identify good candidate materials for"
+" methane storage."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/queries.md:9
+msgid "The AiiDA QueryBuilder"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/queries.md:11
+msgid ""
+"AiiDA provides a querying tool called the QueryBuilder. When working in the "
+"verdi shell or a jupyter notebook with %aiida enabled, the QueryBuilder "
+"class has already been imported."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/queries.md:15
+msgid "Let's create a new querybuilder for our query:"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/queries.md:20
+msgid ""
+"Now we need to say which nodes of the AiiDA graph we are interested in. All "
+"node types of the AiiDA graph derive from the Node class, so in order to "
+"select the most generic type of node, simply append Node:"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/queries.md:28
+msgid ""
+"At this point, we can finish our query by asking for all nodes matching "
+"these criteria:"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/queries.md:34
+msgid ""
+"NoteWe could also have used qb.first() to get the first node. Always use "
+"tab-completion when in doubt which functions can be used on a python object."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/queries.md:38
+msgid ""
+"This command will return us all the Nodes directly, which may not be the "
+"most wise thing to do considering that is the biggest family of AiiDA stored"
+" objects that we can query. To understand the size of the result, we can "
+"type the following command:"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/queries.md:47
+msgid ""
+"If you are interested to retrieve a subclass of a node, append that specific"
+" subclass instead of Node:"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/queries.md:57
+msgid ""
+"NoteRemember to create a new qb = QueryBuilder() instance for each new "
+"query."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/queries.md:61
+msgid "Other data types we will need in the tutorial are:"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/queries.md:69
+msgid "Exercise"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/queries.md:71
+msgid ""
+"Find the number of CifData and NetworkCalculation nodes in the database.Is "
+"there one calculation for every structure?"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/queries.md:74
+msgid ""
+"You may also be interested to learn where the structures are coming from."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/queries.md:78
+msgid ""
+"| Node & subclasses |  Number in DB |-------------------| -------------- |"
+"       Node        |      2519 |   StructureData   |       0 |      CifData"
+"      |      503 |   ParameterData   |      503 |  SinglefileData   |       "
+"1 |       Code        |       1 |  JobCalculation   |      503"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/queries.md:88
+msgid ""
+"List of some Node subclasses and how many times they occur in our test "
+"database."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/queries.md:90
+msgid ""
+"NoteAdvanced users who are familiar with SQL (Structured Query Language) "
+"syntax, can inspect the generated SQL query via:"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/queries.md:97
+msgid "Projections"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/queries.md:99
+msgid ""
+"So far, we've retrieved node objects but we are interested in the "
+"information they contain. In database language, performing a projection "
+"means to extract one or more specific columns from a table. In AiiDA "
+"language it means to specify which properties of the selected nodes our "
+"query should return."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/queries.md:104
+msgid ""
+"|---------| -------------------------| |Entity   | Properties               "
+"| |---------| -------------------------| |Node     | id, uuid, type, label, "
+"description, ctime, mtime| |Computer | id, uuid, name, hostname, "
+"description, enabled, transport_type, scheduler_type| |User     | id, email,"
+" first_name, last_name, institution| |Group    | id, uuid, name, type, time,"
+" description| |---------| -------------------------|"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/queries.md:113
+msgid "<center>A selection of entities and some of their properties.</center>"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/queries.md:115
+msgid ""
+"For example, we might be interested only in type and universally unique "
+"identifier (UUID) of each node:"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/queries.md:123
+msgid ""
+"NotePlease use the id keyword in QueryBuilder queries to access the PK of a "
+"node."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/queries.md:126
+msgid "Filters"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/queries.md:128
+msgid ""
+"We already know how to filter by the type of node, but often we would like "
+"to filter the results by other node properties."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/queries.md:131
+msgid ""
+"For example, we might want to select all the calculations that were launched"
+" on a specific date. In database language, this is called \"adding a "
+"filter\" to a query. A filter is a boolean operator that returns True or "
+"False."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/queries.md:136
+msgid ""
+"|  Operator   |         Datatype         |               Example "
+"|-------------| -------------------------| "
+"------------------------------------ |     ==      |            All"
+"           |              {'==':12} |     in      |            All"
+"           |    {'in':['FINISHED', 'PARSING']} | >,<,<=,>=   |  floats, "
+"integers, dates |             {'>':5.2} |    like     |           Chars"
+"          |       {'like':'calculation%'} |    ilike    |           Chars"
+"          |       {'ilike':'caLculAtioN%'} |     or      |"
+"                          |  {'or':[{'<':5.3}, {'>':6.3}]} |     and     |"
+"                          |  {'and':[{'>':5.3}, {'<':6.3}]}"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/queries.md:146
+msgid "<center>Selection of filter operators.</center>"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/queries.md:148
+msgid ""
+"If you want to add filters to your query, use the filters and provide a "
+"dictionary with the filters you would like to apply. Let's filter out the "
+"structure with label \"HKUST1\":"
+msgstr ""

@@ -1,0 +1,190 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE (Theory and Simulation of Materials (THEOS) and National Centre for Computational Design and Discovery of Novel Materials (NCCR MARVEL)), Switzerland and ROBERT BOSCH LLC, USA. All rights reserved
+# This file is distributed under the same license as the AiiDA Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AiiDA Tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 06:22+0000\n"
+"PO-Revision-Date: 2019-07-15 05:15+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/methane-loading.rst:2
+msgid "Compute methane loading for one MOF"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/methane-loading.rst:4
+msgid ""
+"With the codes set up and the daemon running, we are ready to do our first "
+"calculation using AiiDA -- the methane loading of a MOF at 65 bar."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/methane-loading.rst:7
+msgid ""
+"We will use the `RASPA <../theoretical/settings-raspa.md>`__ code to perform"
+" a grand-canonical Monte Carlo (GCMC) calculation, trying to insert methane "
+"molecules into the nanoporous framework at the given pressure."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/methane-loading.rst:12
+msgid ""
+"In principle, we could continue to use the ``verdi shell`` or ``jupyter "
+"notebooks`` but in order to speed things up, we've already prepared a "
+"template python script that you can :download:`download here "
+"<../assets/raspa_loading.py>`."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/methane-loading.rst:17
+msgid "In the following, you will adapt it to your needs."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/methane-loading.rst:20
+msgid "RASPA input parameters"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/methane-loading.rst:22
+msgid ""
+"The `aiida-raspa <https://github.com/yakutovicha/aiida-raspa/>`__ plugin "
+"uses ``ParameterData`` nodes to specify the input parameters of RASPA:"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/methane-loading.rst:56
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/methane-loading.rst:181
+msgid "Exercise"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/methane-loading.rst:58
+msgid ""
+"The ``ParameterData`` dictionary is missing a number of parameters for which"
+" you'll need to figure out reasonable values."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/methane-loading.rst:61
+msgid ""
+"``UnitCells`` Our simulations are performed under periodic boundary "
+"conditions. This means, we need to make our simulation cell large enough "
+"that a molecule will never interact with two periodic copies of any of its "
+"neighbors. Given the cutoff radius of 12 Angstroms, how often do you need to"
+" replicate the unit cell of the material?"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/methane-loading.rst:67
+msgid ""
+"*Hint:* The CIF files include information on the size of the unit cell."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/methane-loading.rst:70
+msgid ""
+"For ``ExternalTemperature``/``ExternalPressure`` Use ambient temperature and"
+" standard methane desorption pressure for natural gas vehicles."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/methane-loading.rst:74
+msgid ""
+"Currently, the probabilies for translation, rotation, reinsertion and swap "
+"Monte Carlo moves are all equal, which is suboptimal. How would optimize "
+"them?"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/methane-loading.rst:78
+msgid ""
+"Another input of the calculation is the atomic structure of the MOF we want "
+"to use. Find the structure labelled \"ABUWOJ\" (hint: filter by the "
+"``label``) and note down its PK or UUID."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/methane-loading.rst:83
+msgid "Once you know the PK or UUID of a node, you can always load it using"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/methane-loading.rst:93
+msgid "Creating the calculation"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/methane-loading.rst:95
+msgid ""
+"Every calculation sent to a cluster is linked to a code, which describes the"
+" executable file to be used. We need to load the ``raspa@bazis`` code that "
+"we set up before:"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/methane-loading.rst:104
+msgid ""
+"Now we'll specify a few pieces of information to pass on to the `slurm "
+"<https://slurm.schedmd.com/>`__ scheduler that manages calculations on the "
+"cluster, such as how many compute nodes to use or the maximum time allowed "
+"for the calculation:"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/methane-loading.rst:128
+msgid "Submitting the calculation"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/methane-loading.rst:130
+msgid ""
+"In principle, you can now simply submit the calculation from the ``verdi "
+"shell`` using"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/methane-loading.rst:143
+msgid "When the submission script is ready, submit it to the AiiDA daemon:"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/methane-loading.rst:150
+msgid ""
+"By default, the daemon polls for new calculations every 30 seconds, i.e. you"
+" may need to wait up to 30 seconds before your calculation starts running. "
+"If your calculation is stuck in the ``NEW`` state, it may indicate that your"
+" daemon is not running or AiiDA is unable to find the calculation plugin. "
+"Try::"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/methane-loading.rst:161
+msgid ""
+"Use ``verdi calculation list -a`` to monitor the state of the calculation. "
+"Once running, the calculation should finish within 5 minutes."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/methane-loading.rst:166
+msgid "Analyzing your results"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/methane-loading.rst:168
+msgid ""
+"Once the calculation shows up as ``FINISHED``, have a look at the result."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/methane-loading.rst:171
+msgid ""
+"Raspa produces two types of output: Outputs related to the whole system "
+"(e.g. total energy, temperature) and outputs related to the component -- in "
+"our case, there is only one component: methane."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/methane-loading.rst:175
+msgid ""
+"Find the ``component_0`` output of the calculation using ``verdi calculation"
+" show <PK>`` and use the PK of ``component_0`` in ``verdi data parameter "
+"show <PK>`` to extract the average and standard deviation of the absolute "
+"methane loading."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/methane-loading.rst:183
+msgid ""
+"What is the relative standard deviation of the loading? How could you "
+"decrease it?"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/methane-loading.rst:186
+msgid ""
+"Re-run the calculation with adapted settings in order to decrease the "
+"relative standard deviation below 5%"
+msgstr ""

@@ -1,0 +1,129 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE (Theory and Simulation of Materials (THEOS) and National Centre for Computational Design and Discovery of Novel Materials (NCCR MARVEL)), Switzerland and ROBERT BOSCH LLC, USA. All rights reserved
+# This file is distributed under the same license as the AiiDA Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AiiDA Tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 06:22+0000\n"
+"PO-Revision-Date: 2019-07-15 05:14+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/verdi-commands.rst:2
+msgid "The verdi command line"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/verdi-commands.rst:4
+msgid ""
+"The ``verdi`` command line utility is another common way of interacting with"
+" AiiDA, be it to investigate the provenance, to submit or monitor "
+"calculations."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/verdi-commands.rst:48
+msgid "Let's try to get a list of calculations using ``verdi``:"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/verdi-commands.rst:54
+msgid ""
+"It turns out the list of calculations is empty because you currently don't "
+"have any calculations running."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/verdi-commands.rst:57
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/verdi-commands.rst:123
+msgid "Exercise"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/verdi-commands.rst:59
+msgid ""
+"Use the ``-h`` flag to figure out how to list calculations of any state "
+"(both running and finished ones) and from all users (both your current AiiDA"
+" profile and others)."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/verdi-commands.rst:63
+msgid "How do you list all calculations that ran in the past week?"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/verdi-commands.rst:65
+msgid ""
+"Let's have a closer look at a zeo++ calculation node. Pick a primary key "
+"(PK) number and run:"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/verdi-commands.rst:95
+msgid ""
+"This provides a textual representation of the provenance of a single node, "
+"similar to what we've already seen in the interactive provenance browser "
+"before."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/verdi-commands.rst:99
+msgid ""
+"Another way to produce a visual representation of the provenance is ``verdi "
+"graph``."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/verdi-commands.rst:102
+msgid "Excercise"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/verdi-commands.rst:104
+msgid ""
+"Pick a PK number from the list of calculations and generate a provenance "
+"graph for a ``NetworkCalculation``:"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/verdi-commands.rst:116
+msgid "Dependency graph of a zeo++ calculation."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/verdi-commands.rst:118
+msgid ""
+"Contrary to the interactive graph browser, ``verdi graph generate`` can show"
+" not only the direct inputs and outputs of the given node (shown in blue) "
+"but the full graph the node is connected to. We will make use of this "
+"functionality later."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/verdi-commands.rst:125
+msgid ""
+"Famliarize yourself with the other options of the ``calculation`` and "
+"``data`` subcommands, such as:"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/verdi-commands.rst:137
+msgid "and use them to answer the questions below:"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/verdi-commands.rst:139
+msgid ""
+"What are the density and unit cell volume of the structure used in the "
+"calculation you picked?"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/verdi-commands.rst:141
+msgid "Which version of zeo++ was used to compute the geometric properties?"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/verdi-commands.rst:142
+msgid ""
+"What is the scheduler installed on the computer where the calculations were "
+"run?"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/verdi-commands.rst:147
+msgid ""
+"``verdi calculation res <pk>`` simply is a shortcut for ``verdi data "
+"parameter show <pk2>`` where ``pk2`` refers to the ``ParameterData`` with "
+"link name ``output_parameters``."
+msgstr ""

@@ -1,0 +1,176 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE (Theory and Simulation of Materials (THEOS) and National Centre for Computational Design and Discovery of Novel Materials (NCCR MARVEL)), Switzerland and ROBERT BOSCH LLC, USA. All rights reserved
+# This file is distributed under the same license as the AiiDA Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AiiDA Tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 06:22+0000\n"
+"PO-Revision-Date: 2019-07-15 05:15+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/calculations.md:1
+msgid "Setting up remote computers and codes"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/calculations.md:3
+msgid ""
+"AiiDA manages calculations from start to finish, submitting input files to "
+"remote (super)computers, monitoring the job queue and getting results back "
+"to your computer."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/calculations.md:7
+msgid ""
+"In order for AiiDA to take care of this for you, you'll need to tell AiiDA "
+"once how to connect to the remote computer and how to run the simulation "
+"codes."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/calculations.md:10
+msgid "Computer setup and configuration"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/calculations.md:12
+msgid ""
+"For the tutorial, we have access to a compute cluster from the University of"
+" Amsterdam. Let's set up passwordless access using the secure shell (SSH) "
+"protocol."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/calculations.md:15
+msgid "First, generate a new public/private SSH key pair."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/calculations.md:17
+msgid ""
+"NoteWhen running this outside Quantum Mobile, be careful not to overwrite "
+"your own key pair. In this case, just change the proposed file name."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/calculations.md:32
+msgid "Then, copy the public key to the compute cluster:"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/calculations.md:59
+msgid ""
+"Now try logging in to the cluster with ssh "
+"molsim<n>@bazis-h1.science.uva.nl, which should work without password. Once "
+"it does, let's set up the bazis computer in AiiDA as follows:"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/calculations.md:94
+msgid "NotePlease be careful to enter the data as shown, in particular:"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/calculations.md:96
+msgid "AiiDA work directory: /home/{username}/aiida_run/"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/calculations.md:97
+msgid "mpirun command: srun -n {tot_num_mpiprocs}"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/calculations.md:99
+msgid "At this point, the computer node has been created in the database"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/calculations.md:105
+msgid "but access hasn't been configured yet."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/calculations.md:131
+msgid "Finally, let AiiDA test the computer setup we just created:"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/calculations.md:154
+msgid "Code setup and configuration"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/calculations.md:156
+msgid ""
+"Next, we need to let AiiDA know about the computer codes available on bazis."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/calculations.md:158
+msgid ""
+"We've already installed RASPA2 there, so you can set up the code as follows:"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/calculations.md:189
+msgid "NoteRember to include:"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/calculations.md:191
+msgid "=> Remote absolute path: /home/molsim20/raspa/bin/simulate"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/calculations.md:192
+msgid ""
+"export RASPA_DIR=/home/molsim20/raspa/as \"Text to prepend to each command "
+"execution\""
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/calculations.md:195
+msgid "otherwise RASPA won't run and you might get a parsing error."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/calculations.md:197
+msgid ""
+"If you get an error about the input plugin not being found, try running "
+"reeentry scan to refresh AiiDA's plugin entry point cache and repeat the "
+"code setup."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/calculations.md:201
+msgid "The list of codes should now include your new code raspa@bazis"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/calculations.md:207
+msgid "The AiiDA daemon"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/calculations.md:209
+msgid ""
+"The AiiDA daemon is a program running all the time in the background, "
+"checking for new calculations that need to be submitted. The daemon also "
+"takes care of all the necessary operations before the calculation "
+"submission, and after the calculation has completed on the cluster."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/calculations.md:214
+msgid "Let's check whether the AiiDA daemon is already running."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/calculations.md:223
+msgid "If the daemon is not running, please start it"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/calculations.md:229
+msgid ""
+"NoteAiiDA supports multiple profiles but for reasons of consistency only one"
+" profile can communicate with the daemon at a time. When starting the "
+"daemon, you may therefore see an error message like"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/calculations.md:241
+msgid "Just follow the instructions by running"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/calculations.md:245
+msgid ""
+"and provide the email address of your profile in order to allow your user to"
+" run the daemon"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/calculations.md:261
+msgid "Now start the daemon!"
+msgstr ""

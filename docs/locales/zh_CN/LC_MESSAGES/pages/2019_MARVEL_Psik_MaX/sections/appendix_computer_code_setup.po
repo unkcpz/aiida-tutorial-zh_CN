@@ -1,0 +1,31 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE (Theory and Simulation of Materials (THEOS) and National Centre for Computational Design and Discovery of Novel Materials (NCCR MARVEL)), Switzerland and ROBERT BOSCH LLC, USA. All rights reserved
+# This file is distributed under the same license as the AiiDA Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AiiDA Tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 06:22+0000\n"
+"PO-Revision-Date: 2019-07-15 05:18+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/appendix_computer_code_setup.rst:4
+msgid "Setting up computers and codes"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/appendix_computer_code_setup.rst:6
+msgid ""
+"To setup a computer, please refer to the `online documentation <https"
+"://aiida-"
+"core.readthedocs.io/en/latest/get_started/computers.html#setup-a-computer>`_."
+" Instructions to setup a code for a computer can be `found here <https"
+"://aiida-core.readthedocs.io/en/latest/get_started/codes.html>`_."
+msgstr ""

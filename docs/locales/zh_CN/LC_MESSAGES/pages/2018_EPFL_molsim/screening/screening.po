@@ -1,0 +1,160 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE (Theory and Simulation of Materials (THEOS) and National Centre for Computational Design and Discovery of Novel Materials (NCCR MARVEL)), Switzerland and ROBERT BOSCH LLC, USA. All rights reserved
+# This file is distributed under the same license as the AiiDA Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AiiDA Tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 06:22+0000\n"
+"PO-Revision-Date: 2019-07-15 05:21+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../docs/pages/2018_EPFL_molsim/screening/screening.md:1
+msgid "Screening"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/screening.md:4
+msgid ""
+"For the screening part of the work, you can choose one of two possible "
+"routes:"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/screening.md:7
+msgid ""
+"Quick and simple: Use for loops in your scripts to loop over the structures "
+"in your database, submitting in total 1 (Zeo++) + 2 (Raspa) = 3 calculations"
+" per structure."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/screening.md:11
+msgid ""
+"This should require very little changes to your python scripts and is a "
+"perfectly valid solution."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/screening.md:14
+msgid ""
+"Reusable and elegant: Write an AiiDA Workchain that takes a structure, "
+"performs all necessary calculations, and outputs the result."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/screening.md:18
+msgid ""
+"This route requires more advanced python concepts and involves a bit of "
+"coding, but makes your workflow more robust and reusable."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/screening.md:21
+msgid "Quick and simple"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/screening.md:24
+msgid ""
+"Just use the QueryBuilder to load the CifData nodes from the AiiDA database "
+"and loop over them."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/screening.md:27
+msgid ""
+"Computed properties are automatically linked to CifData nodes via "
+"calculation nodes."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/screening.md:30
+msgid ""
+"Try verdi graph generate <PK> on a zeo++ or RASPA calculation node to get an"
+" overview of the AiiDA graph."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/screening.md:33
+msgid ""
+"In order to automatically determine how many unit cells to use in the "
+"simulation, you may use the following function for convenience:"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/screening.md:80
+msgid "Elegant and robust"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/screening.md:83
+msgid ""
+"Combine the calculations into a workchain using the AiiDA WorkChain class. "
+"Here one should define the list of input types using spec.input() function "
+"and the workflow steps using spec.outline() function. In our case the "
+"workflow takes as input CifData object with structure and the names of Zeo++"
+" and Raspa codes."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/screening.md:123
+msgid "The workchain consists of 7 steps."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/screening.md:125
+msgid "Step 1: Prepare input parameters and variables"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/screening.md:152
+msgid "Step 2: Compute the geometric parameters of the MOFs."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/screening.md:153
+msgid ""
+"Draw upon how we submitted Zeo++ calculations  in section 2. The main "
+"difference here is that the calculation inputs, such as Code or structure, "
+"are provided as a dictionary."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/screening.md:186
+msgid "Step 3,5: Compute the methane loading"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/screening.md:187
+msgid ""
+"Steps 3 and 5 compute the methane loading in units of [molecules/cell] at "
+"5.8 and 65 bars respectively. Since the same calculation is performed twice "
+"in this workchain, we put the common part of those steps into a function:"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/screening.md:213
+msgid ""
+"The run_loading_raspa_5_8 and run_loading_raspa_65 functions are defined as "
+"follows:"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/screening.md:224
+msgid "Step 4,6: Extract pressure and methane loading"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/screening.md:226
+msgid ""
+"Steps 4 and 6 extract pressure and methane loading from the input and output"
+" parameters of the calculation and put them into context (ctx) that is used "
+"to store any data that should be persisted between step."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/screening.md:239
+msgid ""
+"Last step stores the selected computed parameters as the output of the "
+"DcMethane workchain:"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/screening.md:268
+msgid ""
+"To submit the calculation please adapt the following script. Please note, "
+"the file containing the DcMethane workchain should be accessible from the "
+"python shell. To achieve that just place the file into a folder listed in "
+"PYTHONPATH system variable and rename it to deliverable_capacity.py."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/screening.md:287
+msgid ""
+"Where structures is the list of CifData nodes stored in your AiiDA database."
+msgstr ""

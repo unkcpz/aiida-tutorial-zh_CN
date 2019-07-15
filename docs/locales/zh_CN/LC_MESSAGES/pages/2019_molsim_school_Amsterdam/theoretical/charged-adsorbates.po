@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE (Theory and Simulation of Materials (THEOS) and National Centre for Computational Design and Discovery of Novel Materials (NCCR MARVEL)), Switzerland and ROBERT BOSCH LLC, USA. All rights reserved
+# This file is distributed under the same license as the AiiDA Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AiiDA Tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 06:22+0000\n"
+"PO-Revision-Date: 2019-07-15 05:16+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/charged-adsorbates.md:1
+msgid "MOFs for CO2 capture"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/charged-adsorbates.md:3
+msgid ""
+"The sequestration of carbon dioxide from flue gasses is an active field of "
+"research, where MOFs appear to be very promising."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/charged-adsorbates.md:7
+msgid "Challenge"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/charged-adsorbates.md:9
+msgid "Can you find the best MOF for carbon capture?"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/charged-adsorbates.md:11
+msgid "You can use the CO2 molecule model from the TraPPE force field"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/charged-adsorbates.md:12
+msgid ""
+"The 502 structures already have charges, so in Raspa remember to enable the "
+"calculation of Coulombic interactions using the Ewald method."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/charged-adsorbates.md:14
+msgid ""
+"A typical reference for indicating the material performance for carbon "
+"capture is the CO2 uptake that you can achieve at 298K and 0.2bar."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/charged-adsorbates.md:17
+msgid ""
+"What do you think are the characteristics of materials with high affinity to"
+" carbon dioxide?"
+msgstr ""

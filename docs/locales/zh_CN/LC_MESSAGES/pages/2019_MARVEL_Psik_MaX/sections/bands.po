@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE (Theory and Simulation of Materials (THEOS) and National Centre for Computational Design and Discovery of Novel Materials (NCCR MARVEL)), Switzerland and ROBERT BOSCH LLC, USA. All rights reserved
+# This file is distributed under the same license as the AiiDA Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AiiDA Tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 06:22+0000\n"
+"PO-Revision-Date: 2019-07-15 05:18+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/bands.rst:4
+msgid "A real-world ``WorkChain``: Computing a band structure"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/bands.rst:6
+msgid ""
+"*If you still have enough time, you might want to first check* "
+":numref:`Appendix %s <workflow_logic>` *before continuing with this "
+"section.*"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/bands.rst:9
+msgid ""
+"As a final demonstration of the power of ``WorkChain``\\ s in AiiDA, we want"
+" to give a demonstration of a ``WorkChain``, which will take a structure as "
+"its only input and compute its band structure. All of the steps that would "
+"normally have to be done manually by the researcher -- choosing appropriate "
+"pseudopotentials, energy cutoffs, k-point meshes, high-symmetry k-point "
+"paths, and performing the various calculation steps -- are performed "
+"automatically by the ``WorkChain``."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/bands.rst:17
+msgid ""
+"The demonstration of the WorkChain will be performed in a Jupyter notebook, "
+"that you can :download:`download from here "
+"<../notebooks/bandstructure.ipynb>`. There you will find some example "
+"structures that are loaded from the Crystallography Open Database (COD), "
+"using the COD-importer integrated in AiiDA."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/bands.rst:23
+msgid ""
+"Note that the required time to calculate the bandstructure for the given "
+"structures ranges from ~5 minutes to more than an hour, given that the "
+"virtual machine is running on two cores with CPU throttling. It is not "
+"necessary to run all these examples as they may take too long to complete. "
+"For reference, the expected output band structures are plotted in "
+":numref:`fig_calc_bands_1` to :numref:`fig_calc_bands_4`."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/bands.rst:34
+msgid ""
+"Electronic band structures of Al computed with AiiDA’s PwBandsWorkChain"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/bands.rst:40
+msgid ""
+"Electronic band structures of GaAs computed with AiiDA’s PwBandsWorkChain"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/bands.rst:46
+msgid ""
+"Electronic band structures of CaF\\ :sub:`2` computed with AiiDA’s "
+"PwBandsWorkChain"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/bands.rst:52
+msgid ""
+"Electronic band structures of BN computed with AiiDA’s PwBandsWorkChain"
+msgstr ""

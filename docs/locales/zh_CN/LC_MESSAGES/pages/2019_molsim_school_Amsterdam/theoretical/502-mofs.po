@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE (Theory and Simulation of Materials (THEOS) and National Centre for Computational Design and Discovery of Novel Materials (NCCR MARVEL)), Switzerland and ROBERT BOSCH LLC, USA. All rights reserved
+# This file is distributed under the same license as the AiiDA Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AiiDA Tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 06:22+0000\n"
+"PO-Revision-Date: 2019-07-15 05:16+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/502-mofs.md:1
+msgid "Origin of the MOF database"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/502-mofs.md:3
+msgid ""
+"The structures of the 502 Metal Organic Frameworks (MOFs) you are asked to "
+"analyze come mainly from powder or single crystal X-Ray diffraction."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/502-mofs.md:6
+msgid ""
+"These structures have been uploaded to the Cambridge Structural Database "
+"(CSD), and have been parsed to reject messy structures and remove the "
+"solvent molecules inside the pores. This database was named Computational "
+"Ready Experimental (CoRE) MOF database."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/502-mofs.md:11
+msgid "In 2014 the CSD reported more than 600k structures"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/502-mofs.md:12
+msgid "About 60k structures were identified as MOFs"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/502-mofs.md:13
+msgid "About 20k MOFs structures were identified having a 3D network topology"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/502-mofs.md:14
+msgid ""
+"5109 were identified as \"not messy\" and porous (i.e., having pore limiting"
+" diameter > 2.4 Angstrom) (Chung2014)"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/502-mofs.md:16
+msgid ""
+"From 5109 3D MOFs, 2932 survived a DFT calculation, using Quantum Espresso, "
+"to compute DDEC point charges (Nazarian2016a)"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/502-mofs.md:18
+msgid ""
+"From 5109 3D MOFs, 838 survived a DFT geometry optimization in CP2K "
+"(Nazarian2016b)"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/502-mofs.md:20
+msgid ""
+"502 MOFs are the intersection of the two sets, having optimized geometry "
+"from CP2K and charges from Quantum Espresso"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/502-mofs.md:23
+msgid ""
+"Don't pay much attention of the names of these structures. They are just "
+"strings with random combinations of six letters."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/502-mofs.md:26
+msgid ""
+"In case you you wonder if there are duplicates in the 502, see (Barthel2018)"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/502-mofs.md:31
+msgid "Exercise"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/502-mofs.md:33
+msgid "The 502 structures are provided with atomic partial charges."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/502-mofs.md:35
+msgid ""
+"Do you need them to evaluate the methane deliverable capacity?How are the "
+"interactions between molecule and framework described?"
+msgstr ""

@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE (Theory and Simulation of Materials (THEOS) and National Centre for Computational Design and Discovery of Novel Materials (NCCR MARVEL)), Switzerland and ROBERT BOSCH LLC, USA. All rights reserved
+# This file is distributed under the same license as the AiiDA Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AiiDA Tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 06:22+0000\n"
+"PO-Revision-Date: 2019-07-15 05:15+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/setup.md:1
+msgid "Getting set up"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/setup.md:4
+msgid ""
+"Download and install the Quantum Mobile virtual machine, which comes both "
+"with AiiDA already preconfigured and with a number of useful codes and tools"
+" for computational materials science."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/setup.md:8
+msgid "Start the virtual machine, open a terminal window and type"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/setup.md:15
+msgid "This activates the virtual environment, in which AiiDA is installed."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/setup.md:17
+msgid ""
+"Since Quantum Mobile focuses on ab initio calculations, it is missing some "
+"aiida plugins we are going to need. Let’s install them (this can take 3 "
+"minutes):"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/setup.md:24
+msgid ""
+"NoteYou may encounter warnings about version conflicts. As long as the "
+"command finishes with Successfully installed ... don't worry and proceed."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/setup.md:28
+msgid "NoteTo make sure that AiiDA noticed all the plugin updates please run"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/setup.md:34
+msgid "Furthermore, you are currently using the default AiiDA profile."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/setup.md:40
+msgid ""
+"At the end of the tutorial, we'll ask you to submit the data you computed, "
+"so let's create a new profile in order to associate this data with you:"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/setup.md:81
+msgid ""
+"Use verdi profile list to verify that you've switched to your new personal "
+"AiiDA profile."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/setup.md:83
+msgid "If you encounter any issues throughout the tutorial, please consider"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/setup.md:85
+msgid "consulting the extensive AiiDA documentation"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/setup.md:86
+msgid "asking in the Slack channel of the tutorial of the tutorial"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/setup.md:87
+msgid "opening a new issue on the tutorial issue tracker"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/setup.md:88
+msgid "asking your neighbor"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/setup.md:89
+msgid "asking a tutor"
+msgstr ""

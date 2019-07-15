@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE (Theory and Simulation of Materials (THEOS) and National Centre for Computational Design and Discovery of Novel Materials (NCCR MARVEL)), Switzerland and ROBERT BOSCH LLC, USA. All rights reserved
+# This file is distributed under the same license as the AiiDA Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AiiDA Tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 06:22+0000\n"
+"PO-Revision-Date: 2019-07-15 05:13+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../docs/pages/2018_PRACE_MaX/sections/bands.rst:2
+msgid "A real-world WorkChain: computing a band structure"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/bands.rst:4
+msgid ""
+"**Note**: *If you still have enough time, you might want to check first "
+"Appendix [sec:convpressure] before continuing with this section.*"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/bands.rst:7
+msgid ""
+"As a final demonstration of the power of WorkChains in AiiDA, we want to "
+"give a demonstration of a WorkChain that we have written that will take a "
+"structure as its only input and will compute its band structure. All of the "
+"steps that would normally have to be done manually by the researcher, "
+"choosing appropriate pseudopotentials, energy cutoffs, k-points meshes, "
+"high-symmetry k-point paths and performing the various calculation steps, "
+"are performed automatically by the WorkChain."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/bands.rst:15
+msgid ""
+"The demonstration of the workchain will be performed in a Jupyter notebook. "
+"To run it, follow the instructions that were given for the querybuilder "
+"notebook in section [sec:querybuilder]. The only difference is that instead "
+"of selecting the notebook in the ``querybuilder`` directory, go to "
+"``pw/bandstructure`` instead and choose the ``bandstructure.ipynb`` "
+"notebook. There you will find some example structures that are loaded from "
+"COD, through the importer integrated within AiiDA. Note that the required "
+"time to calculate the bandstructure for these example structures ranges from"
+" 3 minutes to almost half an hour, given that the virtual machine is running"
+" on a single core with minimal computational power. It is not necessary to "
+"run these examples as it may take too long to complete. For reference, the "
+"expected output band structures are plotted in "
+"Fig.[fig:workchainbandstructures]."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/bands.rst:41
+msgid ""
+"Electronic band structures of four different crystal structures computed "
+"with AiiDA’s PwBandsWorkChain"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/bands.rst:44
+msgid ""
+"*The following appendices consist of optional exercises, and are mentioned "
+"in earlier parts of the tutorial. Go through them only if you have time.*"
+msgstr ""

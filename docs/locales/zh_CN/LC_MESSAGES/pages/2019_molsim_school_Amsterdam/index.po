@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE (Theory and Simulation of Materials (THEOS) and National Centre for Computational Design and Discovery of Novel Materials (NCCR MARVEL)), Switzerland and ROBERT BOSCH LLC, USA. All rights reserved
+# This file is distributed under the same license as the AiiDA Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AiiDA Tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 06:22+0000\n"
+"PO-Revision-Date: 2019-07-15 05:14+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/index.rst:2
+msgid "Prerequisite"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/index.rst:2
+msgid "Version"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/index.rst:4
+msgid "Virtual Machine"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/index.rst:4
+msgid "`Quantum Mobile 18.10.0RC1`_"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/index.rst:6
+msgid "python packages"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/index.rst:6
+msgid "`aiida-core 0.12.2`_, `aiidalab 19.01.2`_"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/index.rst:8
+msgid "codes"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/index.rst:8
+msgid "`zeo++ 0.3`_, `raspa 2.0.36`_"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/index.rst:17
+msgid ""
+"This tutorial is part of the `Understanding molecular simulation "
+"<http://www.acmm.nl/molsim/molsim2019/>`__ school held at the University of "
+"Amsterdam from January 7-18 2019."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/index.rst:23
+msgid "Metal-organic frameworks for methane storage applications"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/index.rst:25
+msgid ""
+"In this tutorial, we will screen metal-organic frameworks (MOFs) for their "
+"possible application as methane adsorbents, allowing to store natural gas at"
+" increased density and lower storage pressure. We will use the `AiiDA "
+"framework <www.aiida.net>`__ in order to automate the screening workflow and"
+" to record the full provenance of the calculations for reproducibility."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/index.rst:32
+msgid ""
+"The tutorial is meant to be run inside the `Quantum Mobile "
+"<https://www.materialscloud.org/work/quantum-mobile>`__ virtual machine, "
+"using a compute resource with `zeo++ <http://www.zeoplusplus.org/>`__ and "
+"`RASPA2 <https://github.com/numat/RASPA2>`__ installed."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/index.rst:40
+msgid ""
+"This tutorial requires a basic knowledge of `python "
+"<https://docs.python.org/2.7/tutorial/index.html>`__. If you are not "
+"familiar with python, we suggest you partner with someone who is."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/index.rst:45
+msgid "Analyzing the database"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/index.rst:59
+msgid "Computing properties of candidate materials"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/index.rst:71
+msgid "Theoretical background"
+msgstr ""

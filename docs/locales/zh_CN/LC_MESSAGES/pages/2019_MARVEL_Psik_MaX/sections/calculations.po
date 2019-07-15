@@ -1,0 +1,726 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE (Theory and Simulation of Materials (THEOS) and National Centre for Computational Design and Discovery of Novel Materials (NCCR MARVEL)), Switzerland and ROBERT BOSCH LLC, USA. All rights reserved
+# This file is distributed under the same license as the AiiDA Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AiiDA Tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 06:22+0000\n"
+"PO-Revision-Date: 2019-07-15 05:18+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:4
+msgid "Submit, monitor and debug calculations"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:6
+msgid "In this section we'll be learning how to create new data in AiiDA."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:8
+msgid ""
+"We will use the `Quantum Espresso <https://www.quantum-espresso.org/>`_ "
+"package to launch a simple `density functional theory "
+"<https://en.wikipedia.org/wiki/Density_functional_theory>`_ calculation of a"
+" silicon crystal using the :doi:`PBE exchange-correlation functional "
+"<10.1103/PhysRevB.54.16533>` and check its results. While we're going to "
+"debug these issues 'manually' here, workflows (which you'll encounter later "
+"in this tutorial) can help you avoid these issues systematically."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:11
+msgid ""
+"Note that besides the ``aiida-quantumespresso`` plugin, AiiDA comes with "
+"plugins for a range of other codes, all of which are listed in the `AiiDA "
+"plugin registry <https://aiidateam.github.io/aiida-registry/>`_."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:14
+msgid "Computer setup"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:16
+msgid ""
+"In a production environment, AiiDA would typically be running on your work "
+"station or laptop, while launching calculations on remote high-performance "
+"compute resources that you have SSH access to. For this reason AiiDA has the"
+" concept of a ``Computer`` to run calculations on."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:20
+msgid ""
+"To keep things simple, Quantum ESPRESSO (together with several other *ab "
+"initio* codes) has been installed directly in the ``codes`` subfolder of "
+"your virtual machine, and you are going to launch your first calculations on"
+" the same computer where AiiDA is installed. Nevertheless, we're now going "
+"to set up this computer for launching calculations:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:29
+msgid ""
+"where ``computer.yml`` is a configuration file in the `YAML format "
+"<https://en.wikipedia.org/wiki/YAML#Syntax>`_)  that you can "
+":download:`download here <include/configuration/computer.yml>`. This is its "
+"content:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:34
+msgid ""
+"When used without the ``--config`` option, ``verdi computer setup`` will "
+"prompt you for the required information, just like you have seen when "
+":ref:`setting up a profile<setup_verdi_quicksetup>`. The configuration file "
+"should work for the virtual machine that comes with this tutorial but may "
+"need to be adapted when you are running AiiDA in a different environment, as"
+" explained in :ref:`this appendix<appendix_computer_code_setup>`."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:39
+msgid ""
+"Finally, you need to provide AiiDA with information on how to access the "
+"``Computer``. For remote computers with ``ssh`` transport, this would "
+"involve e.g. an SSH key. For ``local`` computers, this is just a "
+"\"formality\" (press enter to confirm the default cooldown time):"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:49
+msgid ""
+"For remote computers with ``ssh`` transport, use ``verdi computer configure "
+"ssh`` instead of ``verdi computer configure local``."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:51
+msgid "Your ``localhost`` computer should now show up in"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:57
+msgid "Before proceeding, test that it works:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:65
+msgid "Code setup"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:67
+msgid ""
+"Now that we have our localhost set up, let's configure the ``Code``, namely "
+"the ``pw.x`` executable. As with the computer, we have prepared a "
+"configuration file for you to :download:`download "
+"<include/configuration/code.yml>`. This is its content:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:74
+msgid ""
+"Once you have the configuration file in your local working environment, set "
+"up the code:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:82
+msgid ""
+"The configuration should work for the virtual machine that comes with this "
+"tutorial. If you are following this tutorial in a different environment, you"
+" will need to install Quantum ESPRESSO and adapt the configuration to your "
+"needs, as explained in :ref:`this appendix<appendix_computer_code_setup>`."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:86
+msgid "Similar to the computers, you can list all the configured codes with:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:92
+msgid ""
+"Verify that it now contains a code named ``qe-6.3-pw`` that we just "
+"configured. You can always check the configuration details of an existing "
+"code using:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:101
+msgid ""
+"The ``generic`` profile has already a number of other codes configured. See "
+"``verdi -p generic code list``."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:106
+msgid "The AiiDA daemon"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:108
+msgid ""
+"First of all, check that the AiiDA daemon is actually running. The AiiDA "
+"daemon is a program that"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:111
+msgid "runs continuously in the background"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:112
+msgid "waits for new calculations to be submitted"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:113
+msgid "transfers the inputs of new calculations to your compute resource"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:114
+msgid "checks the status of your calculation at the compute resource, and"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:115
+msgid "retrieves the results from the compute resource"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:117
+msgid "Check the status of the daemon process by typing in the terminal:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:123
+msgid "If the daemon is running, the output should look like"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:135
+msgid "If this is not the case, type in the terminal"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:141
+msgid "to start the daemon."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:144
+msgid "Creating a new calculation"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:146
+msgid ""
+"In the following, we'll be working in the ``verdi shell``. As you go along, "
+"feel free to keep track of your commands by copying them into a python "
+"script ``test_pw.py``."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:152
+msgid ""
+"The ``verdi shell`` imports a number of AiiDA internals so that you as the "
+"user don't have to. You can also make those available to a python script, by"
+" running it using"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:160
+msgid ""
+"Every calculation sent to a cluster is linked to a *code*, which describes "
+"the executable file to be used as well as some metadata. Let's have a look "
+"at the codes already installed on your machine:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:168
+msgid ""
+"There should be a number of them. Here, we're interested in the \"PWscf\" "
+"executable of Quantum Espresso, i.e. in codes for the ``quantumespresso.pw``"
+" plugin:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:174
+msgid ""
+"Pick the correct codename, that might look like, e.g. "
+"``qe-6.3-pw@localhost`` and load it in the verdi shell."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:183
+msgid ""
+"``load_code`` returns an object of type ``Code``, which is the general AiiDA"
+" class for describing simulation codes."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:185
+msgid ""
+"Let's build the inputs for a new ``PwCalculation`` (defined by the "
+"``quantumespresso.pw`` plugin, the default plugin for the code you chose "
+"before)"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:191
+msgid ""
+"As the first step, assign a (short) label or a (long) description to your "
+"calculation, that you might find convenient in the future."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:199
+msgid ""
+"This information will be saved in the database for later queries or "
+"inspection. Note that you can press TAB after writing ``builder.`` to see "
+"all inputs available for this calculation. In order to figure out which data"
+" type is expected for a particular input, such as ``builder.structure``, and"
+" whether the input is optional or required, use ``builder.structure??``."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:205
+msgid ""
+"Now, specify the number of machines (a.k.a. cluster nodes) you are going to "
+"run on and the maximum time allowed for the calculation. The general options"
+" grouped under ``builder.metadata.options`` are independent of the code or "
+"plugin, and will be passed to the scheduler that handles the queue on your "
+"compute resource ."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:217
+msgid ""
+"Again, to see the list of available options, type "
+"``builder.metadata.options.`` and hit the TAB button."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:221
+msgid "Preparation of inputs"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:223
+msgid "A Quantum Espresso calculation needs a number of inputs:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:225
+msgid "`Pseudopotentials <https://en.wikipedia.org/wiki/Pseudopotential>`_"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:226
+msgid "a structure"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:227
+msgid "a mesh in reciprocal space (k-points)"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:228
+msgid "a number of input parameters"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:230
+msgid ""
+"These are mirrored in the inputs of the ``aiida-quantumespresso`` plugin "
+"(see `documentation <https://aiida-"
+"quantumespresso.readthedocs.io/en/stable/user_guide/calculation_plugins/pw.html>`_)."
+" We'll start with the structure, k-points, and pseudopotentials and leave "
+"the input parameters as the last thing to setup."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:235
+msgid "Exercise"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:237
+msgid ""
+"Use what you learned in the previous section to load the ``structure`` and "
+"``kpoints`` inputs for your calculation:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:239
+msgid "Use a silicon crystal structure"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:240
+msgid "Define a ``2x2x2`` mesh of k-points."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:242
+msgid ""
+"Note: If you just copy and paste code that you executed previously, this may"
+" result in duplication of information on your database. In fact, you can re-"
+"use an existing structure stored in your database [#f1]_. Use a combination "
+"of the bash command ``verdi data structure list`` and of the shell command "
+"``load_node()`` to get an object representing the structure created earlier."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:249
+msgid "Attaching the input information to the calculation"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:251
+msgid ""
+"Once you've created a ``structure`` node and a ``kpoints`` node, attach it "
+"to the calculation:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:261
+msgid ""
+"The builder accepts both *stored* and *unstored* data nodes. AiiDA will take"
+" care of storing the unstored nodes upon submission. If you decide not to "
+"submit, nothing will be stored in the database."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:265
+msgid ""
+"PWscf also needs information on the pseudopotentials, in the form of a "
+"dictionary, where keys are the names of the elements and the values are the "
+"corresponding ``UpfData`` objects containing the information on the "
+"pseudopotential. However, instead of creating the dictionary by hand, we can"
+" use a helper function that picks the right pseudopotentials for our "
+"structure from a pseudopotential *family*. You can list the preconfigured "
+"families from the command line:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:274
+msgid ""
+"Pick the one you configured earlier (or one of the ``SSSP`` families that we"
+" provide) and link it to the calculation using the command:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:282
+msgid ""
+"Print the content of the `pseudos` namespace (`print(builder.pseudos)`) to "
+"see what the helper function created."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:285
+msgid "Preparing and debugging input parameters"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:287
+msgid ""
+"Finally, we need to specify a number of input parameters  (i.e. plane wave "
+"cutoffs, convergence thresholds, etc.). to launch the Quantum ESPRESSO "
+"calculation. The structure of the parameter dictionary closely follows the "
+"structure of the `PWscf input file <https://www.quantum-"
+"espresso.org/Doc/INPUT_PW.html>`_."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:291
+msgid ""
+"Since these are often the parameters to tune in a calculation, let's "
+"**introduce a few mistakes intentionally** and use this part of the tutorial"
+" to learn how to debug problems."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:295
+msgid ""
+"Define a set of input parameters for Quantum ESPRESSO, preparing a "
+"dictionary of the form:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:316
+msgid ""
+"This dictionary is almost a valid input for the Quantum ESPRESSO plugin, "
+"except for an invalid key ``mickeymouse``. When Quantum ESPRESSO receives an"
+" unrecognized key, it will stop. By default, the AiiDA plugin will *not* "
+"validate your input and simply pass it on to the code."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:322
+msgid ""
+"Let's wrap the ``parameters_dict`` python dictionary in an AiiDA ``Dict`` "
+"node and see what happens."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:329
+msgid "Simulate submission"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:331
+msgid ""
+"At this stage, you have created in memory (it's not yet stored in the "
+"database) the input of the graph shown below. The outputs will be created by"
+" the daemon later on."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:338
+msgid ""
+"In order to check which input files AiiDA creates, we can perform a *dry "
+"run* of the submission process. Let's tell the builder that we want a dry "
+"run and that we don't want to store the provenance of the dry run:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:348
+msgid "It's time to run:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:357
+msgid ""
+"Instead of using the builder, you can also simply pass the calculation class"
+" as the first argument, followed by the inputs as keyword arguments, e.g.:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:364
+msgid ""
+"The builder is simply a convenience wrapper providing tab-completion in the "
+"shell and automatic help strings."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:366
+msgid ""
+"This creates a folder of the form ``submit_test/[date]-0000[x]`` in the "
+"current directory. In your second terminal:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:369
+msgid "open the input file ``aiida.in`` within this folder"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:370
+msgid "compare it to input data nodes you created earlier"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:371
+msgid "verify that the `pseudo` folder contains the needed pseudopotentials"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:372
+msgid "have a look at the submission script ``_aiidasubmit.sh``"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:376
+msgid ""
+"The files created by a dry run are only intended for  inspection and cannot "
+"be used to correct the inputs of your calculation."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:380
+msgid "Submitting the calculation"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:382
+msgid ""
+"Up to now we've just been playing around and our calculation has been kept "
+"in memory and not in the database. Now that we have inspected the input "
+"files and convinced ourselves that Quantum ESPRESSO will have all the "
+"information it needs to perform the calculation, we will submit the "
+"calculation properly. Doing so will make sure that all inputs are stored in "
+"the database, will run and store the calculation and link the outputs to it."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:390
+msgid "Let's revert the following values in our builder to their defaults:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:397
+msgid "And then rely on the submit machinery of AiiDA,"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:404
+msgid ""
+"As soon as you have executed these lines, the ``calculation`` variable "
+"contains a ``PwCalculation`` instance, already submitted to the daemon."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:408
+msgid ""
+"You may have noticed that we used ``submit`` here instead of ``run``. The "
+"difference is that ``submit`` will hands over the calculation to the daemon "
+"running in the background, while ``run`` will execute all tasks in the "
+"current shell."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:412
+msgid ""
+"All processes in AiiDA (you will soon get to know more) can be \"launched\" "
+"using one of available functions:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:414
+msgid "run"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:415
+msgid "run_get_node"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:416
+msgid "run_get_pk"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:417
+msgid "submit"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:419
+msgid ""
+"which are explained in more detail in the `online documentation <https"
+"://aiida-core.readthedocs.io/en/latest/working/processes.html#launching-"
+"processes>`_."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:422
+msgid ""
+"The calculation is now stored in the database and was assigned a \"database "
+"primary key\" or ``pk`` (``calculation.pk``) as well as a UUID "
+"(``calculation.uuid``). See the :ref:`previous section <2019-aiida-"
+"identifiers>` for more details on these identifiers."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:425
+msgid ""
+"Note that while AiiDA will prevent you from changing the content of stored "
+"nodes, the concept of \"extras\" allows you to set extra attributes, e.g. as"
+" a way of labelling nodes and providing information for querying."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:429
+msgid ""
+"For example, let's add an extra attribute called ``element``, with value "
+"``Si``:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:435
+msgid ""
+"In the mean time, after you submitted your calculation, the daemon picked it"
+" up and started to: generate the input files, submit the calculation to the "
+"queue, wait for it to run and finish, retrieve the output files, parse them,"
+" store them in the database and set the state of the calculation to "
+"``Finished``."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:443
+msgid ""
+"If the daemon is not running, the calculation will remain in the ``NEW`` "
+"state until you start the daemon."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:447
+msgid "Checking the status of the calculation"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:449
+msgid "You can check the calculation status from the command line:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:457
+msgid ""
+"Since you are running your DFT calculation directly on the VM, ``verdi`` "
+"commands can be a bit slow until the calculation finishes."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:460
+msgid ""
+"If you don't see any calculation in the output, the calculation you "
+"submitted has already finished."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:463
+msgid ""
+"By default, the command only prints calculations that are still active "
+"[#f2]_. Let's also list your finished calculations (and limit those only to "
+"the one created in the past day):"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:471
+msgid "as explained in the first section."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:473
+msgid ""
+"Similar to the dry run, we can also inspect the input files of the *actual* "
+"calculation:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:480
+msgid ""
+"for the ``pk_number`` of your calculation. This will show the contents of "
+"the input directory (``-c`` prints directories in color). Check the content "
+"of input files with"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:489
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:491
+msgid ""
+"Your calculation should end up in a FAILED state (last column of ``verdi "
+"process list -a -p1``), and correspondingly the error code near the "
+"\"Finished\" status of the State should be non-zero,"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:504
+msgid ""
+"This was expected, since we used an invalid key in the input parameters. "
+"Situations like this happen in real life, so AiiDA provides tools to trace "
+"back to the source of the problem and correct it."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:508
+msgid "A first way to proceed is to inspect the output file of PWscf."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:515
+msgid ""
+"This might be enough to understand the reason why the calculation failed."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:518
+msgid ""
+"AiiDA provides further tools for troubleshooting in a more compact way. For "
+"any calculation, both successful and failed, you can get a summary by:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:557
+msgid ""
+"The last part of the output alerts you to the fact that there are some log "
+"messages waiting for you, if you run ``verdi process report <pk>``."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:561
+msgid ""
+"Let's now correct our input parameters dictionary by leaving out the invalid"
+" key and see if our calculation succeeds:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:581
+msgid ""
+"If you have been using the separate script approach, modify the script to "
+"remove the faulty input and run it again with:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:588
+msgid ""
+"Use ``verdi process list -a -p1`` to verify that the calculation reaches the"
+" finished status, with exit code zero."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:592
+msgid "Using the calculation results"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:594
+msgid ""
+"Now you can access the results as you have seen earlier. For example, note "
+"down the pk of the calculation so that you can load it in the ``verdi "
+"shell`` and check the total energy with the commands:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:603
+msgid ""
+"Besides writing input files, running the software for you, storing the "
+"output files, and connecting it all together in your provenance graph, many "
+"AiiDA plugins will parse the output of your code and make output values of "
+"interest available through an output dictionary node (as depicted in the "
+"graph above). In the case of the ``aiida-quantumespresso`` plugin this "
+"output node is available at ``calculation.outputs.output_parameters`` and "
+"you can access all the available attributes (not only the energy) using:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:616
+msgid ""
+"While the name of this output dictionary node can be chosen by the plugin, "
+"AiiDA provides the \"results\" shortcut ``calculation.res`` that plugin "
+"developers can use to provide what they consider the result of the "
+"calculation."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:623
+msgid "Footnotes"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:624
+msgid ""
+"In order to avoid duplication of KpointsData, you would first need to learn "
+"how to query the database, therefore we will ignore this issue for now."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/calculations.rst:625
+msgid ""
+"A process is considered active if it is either ``Created``, ``Running`` or "
+"``Waiting``. If a process is no longer active, but terminated, it will have "
+"a state ``Finished``, ``Killed`` or ``Excepted``."
+msgstr ""

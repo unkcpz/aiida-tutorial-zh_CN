@@ -1,0 +1,132 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE (Theory and Simulation of Materials (THEOS) and National Centre for Computational Design and Discovery of Novel Materials (NCCR MARVEL)), Switzerland and ROBERT BOSCH LLC, USA. All rights reserved
+# This file is distributed under the same license as the AiiDA Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AiiDA Tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 06:22+0000\n"
+"PO-Revision-Date: 2019-07-15 05:15+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/candidate-selection.md:1
+msgid "Selecting candidate materials"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/candidate-selection.md:3
+msgid ""
+"If we had unlimited computational resources, we would simply screen the "
+"whole database. From a tutorial perspective, however, there is not much "
+"difference between screening 5 or screening 500 structures, except for the "
+"longer wait time."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/candidate-selection.md:8
+msgid ""
+"Instead, you will now use what you've learned about extracting information "
+"from the AiiDA database in order to select 3 good candidate materials, whose"
+" deliverable capacities you are going to compute."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/candidate-selection.md:12
+msgid "What makes a good material for methane storage?"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/candidate-selection.md:14
+msgid ""
+"You've already learned this morning about some key descriptors that can be "
+"used to guess whether a nanoporous material can be suitable for methane "
+"storage. You may want to consult the SLIDES in order to refresh your memory,"
+" and have a look at a brief description of some important geometrical "
+"properties computed by zeo++."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/candidate-selection.md:21
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/candidate-selection.md:66
+msgid "Exercise"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/candidate-selection.md:23
+msgid ""
+"Pick two geometric descriptors to use for selecting your candidate "
+"materials.Load a NetworkCalculation node and identify the corresponding keys"
+" for these two descriptors (and their units)."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/candidate-selection.md:28
+msgid "Finding good candidates"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/candidate-selection.md:30
+msgid ""
+"Let's use the QueryBuilder in order get the full range of the two "
+"descriptors in the database:"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/candidate-selection.md:41
+msgid ""
+"In order to figure out which properties zeo++ computed, have a look at the "
+"attributes of one of the zeo++ output nodes, for example:"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/candidate-selection.md:48
+msgid ""
+"NoteWe are using Density and Number_of_channels here but this combination is"
+" just an example (and not an ideal choice). If you are wondering how to set "
+"up ParameterData and CifData, see the previous section."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/candidate-selection.md:55
+msgid ""
+"Plot the result using the plotting library of your choice. Using matplotlib "
+"you would do something like"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/candidate-selection.md:68
+msgid ""
+"Use the information from the plots to identify a suitable target range for "
+"your descriptors and filter the  structures within this range."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/candidate-selection.md:72
+msgid ""
+"Once you've identified the range of your two parameters, get the labels of "
+"the structure in this range. Note that you can combine filters like so:"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/candidate-selection.md:82
+msgid "For explanations on filters, see the previous section."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/candidate-selection.md:84
+msgid ""
+"NoteThe label can be used to give human-readable identifiers to any AiiDA "
+"node. By default it is empty, but we have added labels for all CifData nodes"
+" in the database."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/candidate-selection.md:91
+msgid ""
+"Finally, put the structures you've identified into a group candidates so "
+"that you can refer to them easily from now on. In addition to your three "
+"structures, also add 'HKUST1' in order to compare to the reference "
+"calculation provided later on."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/candidate-selection.md:104
+msgid ""
+"After this, your group should show up in verdi group list and you can use "
+"verdi group show candidates to inspect its content."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/candidate-selection.md:107
+msgid "In the python interface you can retrieve them back like so:"
+msgstr ""

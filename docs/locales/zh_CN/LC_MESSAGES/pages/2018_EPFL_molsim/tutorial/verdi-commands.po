@@ -1,0 +1,298 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE (Theory and Simulation of Materials (THEOS) and National Centre for Computational Design and Discovery of Novel Materials (NCCR MARVEL)), Switzerland and ROBERT BOSCH LLC, USA. All rights reserved
+# This file is distributed under the same license as the AiiDA Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AiiDA Tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 06:22+0000\n"
+"PO-Revision-Date: 2019-07-15 05:20+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:1
+msgid "Using the verdi command line"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:4
+msgid ""
+"This part of the tutorial will help you familiarize with the command line "
+"utility <span>verdi</span>, one of the most common ways to interact with "
+"AiiDA. <span>verdi</span> with its subcommands enables a variety of "
+"operations such as inspecting the status of ongoing or terminated "
+"calculations, showing the details of calculations, computers, codes, or data"
+" structures, access the input and the output of a calculation, etc. Similar "
+"to the bash shell, verdi command support Tab compltion. Try right now to "
+"type <span>verdi</span> in a terminal and tap Tab twice to have a list of "
+"subcommands. Whenever you need the explanation of a command type <span>verdi"
+" help</span> or add <span>-h</span> flag if you are using any of the "
+"<span>verdi</span> subcommands. Finally, fields enclosed in angular "
+"brackets, such as <pk>, are placeholders to be replaced by the actual value "
+"of that field (an integer, a string, etc...)."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:19
+msgid "The list of calculations"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:22
+msgid "Let us try our first <span>verdi</span> commands. Type in the terminal"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:28
+msgid ""
+"(Note: the first time you run this command, it might take some seconds as it"
+" is the first time you are accessing the database in the virtual machine. "
+"Following calls will be faster). This will print the list of ongoing "
+"calculations, which should be empty. The first output line should look like"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:38
+msgid ""
+"In order to print a list with all calculations that finished correctly in "
+"the AiiDA database, you can use the <span>-a/--all-states</span> and "
+"<span>-A/--all-users</span> flag as follows:"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:46
+msgid ""
+"Another very typical option combination allows to get calculations in any "
+"state (flag <span>-a</span>) d in the past <span>NUM</span> days (<span>-p "
+"<NUM></span>): e.g., for calculation in the past 1 day: <span>verdi "
+"calculation list -p1 -a</span>."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:51
+msgid ""
+"Each row of the output identifies a calculation and shows several "
+"information about it. For a more detailed list of properties, choose one row"
+" by noting down its pk number and type in the terminal"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:59
+msgid ""
+"The output depends on the specific pk chosen and should inform you about the"
+" input nodes (e.g. initial structure, settings etc.), the output nodes (e.g."
+" output parameters, etc.). An example of RASPA calculation (pk=3006) output "
+"is provided below"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:88
+msgid "A typical AiiDA graph"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:91
+msgid ""
+"Note that pk number shown in the examples may be different for your "
+"database."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:94
+msgid ""
+"AiiDA stores in the database the inputs required by a calculation as well as"
+" the its outputs."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:97
+msgid ""
+"![Dependency graph of a Raspa calculation.]({{ "
+"site.baseurl}}/assets/2018_EPFL_molsim/raspa_sample_graph.png \"Dependency "
+"graph of a Raspa calculation.\")"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:99
+msgid ""
+"You can create a similar graph for any calculation node by using the utility"
+" <span>verdi graph  <pk></span>. For example, before you obtained "
+"information (in text form) for pk=3006. To visualize similar information in "
+"graph(ical) form, run (replacing <span><pk></span> with your number):"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:109
+msgid ""
+"This command creates the file <pk>.dot that can be rendered by means of the "
+"utility <span>dot</span>. Convert it to PDF and have a look:"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:117
+msgid ""
+"Spend some time to familiarize with the graph structure. Identify the root "
+"node (highlighted in blue) and trace back the structure used as an input. "
+"This is an example of a Raspa calculation. We will now inspect the different"
+" elements of this graph."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:122
+msgid "Inspecting the nodes of a graph"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:125
+msgid "ParameterData and Calculations"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:127
+msgid ""
+"Now, let us have a closer look to the some of the nodes appearing in the "
+"graph. Choose the node of the type ParameterData with input link name "
+"parameters (ex. pk=2757) and type in the terminal:"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:135
+msgid ""
+"A ParameterData contains a dictionary (i.e., key–value pairs), stored in the"
+" database in a format ready to be queried (we will learn how to run queries "
+"later on in this tutorial). The command above will print the content "
+"dictionary, containing the parameters used to define the input file for the "
+"calculation. You can compare the dictionary with the content of the raw "
+"input file to Raspa (that was d by AiiDA) via the command"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:147
+msgid ""
+"where you substitute the pk of the calculation node (e.g. pk=3006). Check "
+"the consistency of the parameters written in the input file and those stored"
+" in the ParameterData node. Even if you don’t know the meaning of the input "
+"flags of a Raspa calculation, you should be able to see how the input "
+"dictionary has been converted into the input file."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:153
+msgid ""
+"The previous command just printed the content of the “default” input file "
+"simulation.input. To see a list of all the files used to run a calculation "
+"(input file, submission script, etc.) type instead"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:161
+msgid ""
+"(Adding a --color flag allows you to easily distinguish files from folders "
+"by a different coloring)."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:164
+msgid ""
+"Once you know the name of the file you want to visualize, you can call the "
+"<span>verdi calculation inputcat</span> command specifying the path. For "
+"instance, to see the submission script, you can do:"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:172
+msgid "CifData"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:174
+msgid ""
+"Now let us focus on CifData objects, such as node pk=2886 of the graph. A "
+"CifData object contains a crystal structure and can be inspected "
+"interactively using viewers like jmol or vesta. Type in the terminal"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:182
+msgid "to show the selected structure."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:184
+msgid "Codes and computers"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:186
+msgid ""
+"Let us focus now on the nodes of type code. A code represents (in the "
+"database) the actual executable used to run the calculation. Find the pk of "
+"such a node in the graph and type"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:194
+msgid ""
+"The command prints information on the plugin used to interface the code to "
+"AiiDA, the remote machine on which the code is executed, the path of its "
+"executable, etc. To have a list of all available codes type"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:202
+msgid ""
+"Among the entries of the output you should also find the code just shown."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:205
+msgid ""
+"Similarly, the list of computers on which AiiDA can submit calculations is "
+"accessible by means of the command"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:212
+msgid ""
+"(<span>-a</span> shows all computers, also the one imported in your database"
+" but that you did not configure, i.e., to which you don’t have access). "
+"Details about each computer can be obtained by the command"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:220
+msgid "Now you have the tools to answer the question:"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:222
+msgid ""
+"What is the scheduler installed on the computer where the calculations of "
+"the graph have run?"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:225
+msgid "Calculation results"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:227
+msgid ""
+"The results of a calculation can be accessed directly from the calculation "
+"node. Type in the terminal"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:234
+msgid ""
+"which will print the output dictionary of the “scalar” results parsed by "
+"AiiDA at the end of the calculation. Note that this is actually a shortcut "
+"for"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:242
+msgid ""
+"where pk2 refers to the ParameterData node attached as an output of the "
+"calculation node, with link name output_parameters."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:245
+msgid ""
+"By looking at the output of the command, what is the averate total energy of"
+" the calculation having pk=3006?"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:248
+msgid ""
+"One can access the component-specific output parameters in the same way "
+"(using pk = 1130 that corresponds to the component 0, methane)"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:255
+msgid ""
+"Similarly to what you did for the calculation inputs, you can access the "
+"output files via the commands"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:262
+msgid "and"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/verdi-commands.md:268
+msgid ""
+"Use the latter to verify that the average total energy that you have found "
+"in the last step has been extracted correctly from the output file (Hint: "
+"filter the lines containing the string “Total energy”, e.g. using grep Total"
+" energy: -A 8 , to isolate the relevant lines)."
+msgstr ""

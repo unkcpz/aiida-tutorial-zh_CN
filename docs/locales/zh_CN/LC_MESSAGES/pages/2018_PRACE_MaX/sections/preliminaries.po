@@ -1,0 +1,231 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE (Theory and Simulation of Materials (THEOS) and National Centre for Computational Design and Discovery of Novel Materials (NCCR MARVEL)), Switzerland and ROBERT BOSCH LLC, USA. All rights reserved
+# This file is distributed under the same license as the AiiDA Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AiiDA Tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 06:22+0000\n"
+"PO-Revision-Date: 2019-07-15 05:13+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../docs/pages/2018_PRACE_MaX/sections/preliminaries.md:1
+msgid "Preliminaries"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/preliminaries.md:4
+msgid "Instructions to SSH to the Amazon EC2 instance"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/preliminaries.md:7
+msgid ""
+"You should have received an IP address from the instructors, and two files "
+"with a private and a public SSH key (aiida_tutorial_NUM and "
+"aiida_tutorial_NUM.pub), where NUM is an integer. These allow you to connect"
+" to an Amazon EC2 instance (different for each participant of the tutorial)."
+" To connect via ssh to this machine follow the steps below, depending on the"
+" computer you have."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/preliminaries.md:9
+msgid ""
+"Note! If you decide to work in pairs, one of the two people should discard "
+"his email. The other person should forward his email to the colleague, and "
+"both should then use the same virtual machine IP and account (ssh key). In "
+"this case, you will be both using the same account, so be careful not to "
+"delete the work of your colleague."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/preliminaries.md:11
+msgid "Linux and Mac"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/preliminaries.md:13
+msgid ""
+"If needed, create a .ssh directory in your home (mkdir ~/.ssh), and set its "
+"permissions: chmod 700 ~/.ssh"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/preliminaries.md:16
+msgid ""
+"Copy in this .ssh directory the two files aiida_tutorial_NUM and "
+"aiida_tutorial_NUM.pub"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/preliminaries.md:19
+msgid ""
+"Set the correct permissions on the private key: chmod 600 "
+"~/.ssh/aiida_tutorial_NUM (then check with ls -l that the permissions of "
+"this file are now -rw-------)."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/preliminaries.md:22
+msgid ""
+"Create (or modify if it already exists) the config file in your .ssh "
+"directory, adding the following lines:"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/preliminaries.md:32
+msgid ""
+"where you have to replace IP_ADDRESS with the IP address provided to you."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/preliminaries.md:34
+msgid ""
+"You can then ssh to the Amazon EC2 instance from the terminal, using simply"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/preliminaries.md:41
+msgid ""
+"(connecting with -X — note that sometimes -Y is needed instead — will allow "
+"you to run graphical programs such as xmgrace or gnuplot interactively, even"
+" if they might not be very responsive as the Amazon virtual machines are in "
+"Ireland)."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/preliminaries.md:43
+msgid "Windows"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/preliminaries.md:45
+msgid "Install PuTTY."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/preliminaries.md:47
+msgid ""
+"Run PuTTYGen, load the aiida_tutorial_NN private key (button \"Load\"). "
+"remember to choose to show “All files (*.*)” in the window, and select the "
+"file without any extension (Type: File)."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/preliminaries.md:49
+msgid ""
+"In the same window, click on “Save private Key”, and save the key with the "
+"name aiida_tutorial_NN.ppk."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/preliminaries.md:52
+msgid ""
+"Run Pageant: it will add a new icon near the clock, in the bottom right of "
+"your screen."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/preliminaries.md:54
+msgid "Right click on this Pageant icon, and click on “View Keys”."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/preliminaries.md:56
+msgid ""
+"Click on \"Add key\" and select the aiida_tutorial_NN.ppk you saved a few "
+"steps above."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/preliminaries.md:58
+msgid ""
+"Run PuTTY, put the given IP address as hostname. Write aiidatutorial in "
+"Saved Sessions and click Save. Go to Connection (\\to) Data and put aiida as"
+" autologin username. Under Connection, go to SSH (\\to) Tunnels, type 8888 "
+"in the Source Port box and localhost:8888 in Destination and click Add. "
+"Click on Save again on the Session screen."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/preliminaries.md:60
+msgid ""
+"Now select aiidatutorial from the session list, click Load and, finally, "
+"open."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/preliminaries.md:62
+msgid "Everybody: connect to the machine and start jupyter"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/preliminaries.md:65
+msgid ""
+"Before starting the tutorial, connect via SSH to the Amazon machine as "
+"explained above (the Amazon machine already contains a pre-configured AiiDA "
+"installation and some test data for this tutorial)."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/preliminaries.md:67
+msgid "Before starting"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/preliminaries.md:70
+msgid "Once connected to your machine, type in the remote terminal"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/preliminaries.md:76
+msgid ""
+"This will enable the virtual environment in which AiiDA is installed, "
+"allowing you to use AiiDA. Now type in the same bash"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/preliminaries.md:82
+msgid ""
+"This will run a server with a web application called jupyter, which is used "
+"to create interactive python notebooks. To connect to this application, copy"
+" the URL that has been printed to the terminal (it will be something like "
+"http://localhost:8888/?token=2a3ba37cd1...) and paste it into the URL bar of"
+" a web browser. You will see a list of folders: these are folders on the "
+"remote Amazon computer. We will use jupyter in section [sec:querybuilder] "
+"and optionally in other sections as well."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/preliminaries.md:84
+msgid ""
+"Now launch an identical ssh connection (again, as explained above) in "
+"another terminal, and type workon aiida here too. This terminal is the one "
+"you will actually use in this tutorial."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/preliminaries.md:86
+msgid ""
+"Note: Since the port listening is set to a specific port (8888) in the "
+"section [sec:sshintro], you have to make sure on the server the Jupiter "
+"notebook is running on the port 8888. Otherwise, use an alternative port for"
+" listening."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/preliminaries.md:88
+msgid ""
+"A final note: for details on AiiDA that may not be fully explained here, you"
+" can refer to the full AiiDA documentation, available online at http"
+"://aiida-core.readthedocs.io/en/latest/."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/preliminaries.md:90
+msgid "Troubleshooting tips (in case you have issues later)"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/preliminaries.md:93
+msgid ""
+"If you get an error like ImportError: No module named aiida or No command "
+"’verdi’ found double check that you have loaded the virtual environment with"
+" workon aiida before launching python, ipython or the jupyter server."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/preliminaries.md:95
+msgid ""
+"If your browser cannot connect to the jupyter instance, check that you have "
+"correctly configured SSH tunneling/forwarding as described above. Also note "
+"that you should run the jupyter server from the terminal connected to the "
+"Amazon machine, while the web browser should be opened locally on your "
+"laptop or worstation."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/preliminaries.md:97
+msgid ""
+"The Jupyter Notebook officially supports the latest stable versions of "
+"Chrome, Safari and Firefox. See http://jupyter-"
+"notebook.readthedocs.io/en/4.x/notebook.html#browser-compatibility for more "
+"information on broswer compatibility (and update your browser if it is too "
+"old)."
+msgstr ""

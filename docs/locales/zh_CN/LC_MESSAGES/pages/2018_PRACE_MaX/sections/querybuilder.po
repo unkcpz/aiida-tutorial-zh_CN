@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE (Theory and Simulation of Materials (THEOS) and National Centre for Computational Design and Discovery of Novel Materials (NCCR MARVEL)), Switzerland and ROBERT BOSCH LLC, USA. All rights reserved
+# This file is distributed under the same license as the AiiDA Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AiiDA Tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 06:22+0000\n"
+"PO-Revision-Date: 2019-07-15 05:13+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../docs/pages/2018_PRACE_MaX/sections/querybuilder.rst:2
+msgid "Queries in AiiDA: The Querybuilder"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/querybuilder.rst:4
+msgid ""
+"This part of the tutorial is provided only in interactive mode through a "
+"Jupyter notebook, which you will be able to run in your browser. To "
+"accomplish this we first need to start the Jupyter server, if you didn’t do "
+"it already at the very beginning of the tutorial. First make sure you are "
+"connected to the virtual machine with local forwarding enabled, as described"
+" in section [sec:sshintro]. Then, on the virtual machine, first make sure "
+"your are in the ``aiida`` virtual environment:"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/querybuilder.rst:16
+msgid ""
+"If the virtual environment is successfully loaded, your prompt should be "
+"prefixed with ``(aiida)``. To finally launch the Jupyter server, execute the"
+" following commands:"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/querybuilder.rst:25
+msgid ""
+"If all went well, you should now be able to open up a browser on your local "
+"machine and point it to the following address "
+"``http://localhost:8888/?token=2a3ba3...`` (replace the token with the one "
+"printed on output by the previous command). This should now show you a "
+"directory navigator."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/querybuilder.rst:31
+msgid ""
+"To open the notebook, click on ``querybuilder`` and then select the file "
+"``tutorial.ipynb``. Note that there is also a ``solution.ipynb``, which is a"
+" copy of the same notebook, but which contains the solutions to all the "
+"exercises. You can use this version at your own discretion if you get stuck "
+"at some point (but we suggest that you try not to look at it at first)."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/querybuilder.rst:37
+msgid ""
+"See below for a rendered version of the notebook, that can also be "
+"downloaded from :download:`here <../notebooks/querybuilder-tutorial.ipynb>`."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/querybuilder.rst:44
+msgid ""
+"The solutions can also be downloaded from :download:`here <../notebooks"
+"/querybuilder-solutions.ipynb>`: but again, try not to use them at first!"
+msgstr ""

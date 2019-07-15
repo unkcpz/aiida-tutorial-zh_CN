@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE (Theory and Simulation of Materials (THEOS) and National Centre for Computational Design and Discovery of Novel Materials (NCCR MARVEL)), Switzerland and ROBERT BOSCH LLC, USA. All rights reserved
+# This file is distributed under the same license as the AiiDA Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AiiDA Tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 06:22+0000\n"
+"PO-Revision-Date: 2019-07-15 05:18+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/querybuilder.rst:4
+msgid "Queries in AiiDA: The Querybuilder"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/querybuilder.rst:6
+msgid ""
+"This part of the tutorial is provided only in interactive mode through a "
+"Jupyter notebook, which you will be able to run in your browser. For "
+"instructions on starting the Jupyter server, please refer to the :ref:`setup"
+" section<setup_jupyter>`. Once the server is running, :download:`download "
+"this tutorial notebook <../notebooks/querybuilder-tutorial.ipynb>` and open "
+"it in Jupyter. For instructions on downloading these files on a machine "
+"through which you are connected through SSH, refer to :ref:`this "
+"section<setup_downloading_files>`."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/querybuilder.rst:15
+msgid ""
+"The notebook will show you how the ``QueryBuilder`` can be used to query "
+"your database for specific data. It will demonstrate certain concepts and "
+"then ask you to use those to perform certain queries on your own database. "
+"Some of these question cells will have partial solutions that you will have "
+"to complete."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/querybuilder.rst:20
+msgid ""
+"Once you have finished the notebook, you can download a :download:`notebook "
+"with the solutions <../notebooks/querybuilder-solutions.ipynb>` but try not "
+"to use them at first!"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/querybuilder.rst:24
+msgid "See below for a rendered version of the notebook:"
+msgstr ""

@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE (Theory and Simulation of Materials (THEOS) and National Centre for Computational Design and Discovery of Novel Materials (NCCR MARVEL)), Switzerland and ROBERT BOSCH LLC, USA. All rights reserved
+# This file is distributed under the same license as the AiiDA Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AiiDA Tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 06:22+0000\n"
+"PO-Revision-Date: 2019-07-15 05:20+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../docs/pages/2018_EPFL_molsim/screening/import.md:1
+msgid "Import the structures"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/import.md:4
+msgid "You can download a tar file containing the structures from"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/import.md:11
+msgid "Visualize a few structures using jmol:"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/import.md:18
+msgid "Can you think of two criteria for a high deliverable methane capacity?"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/import.md:21
+msgid ""
+"Use the CifData class to import the structures into your database, e.g."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/import.md:30
+msgid ""
+"Use wildcards with the glob and os modules to get the file paths of all "
+"structures like so:"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/import.md:39
+msgid "Keep track of your structures using groups"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/import.md:47
+msgid ""
+"Finally, you can load your structures from the group using the AiiDA query "
+"builder"
+msgstr ""

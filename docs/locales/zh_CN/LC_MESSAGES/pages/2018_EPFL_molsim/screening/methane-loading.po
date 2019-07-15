@@ -1,0 +1,60 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE (Theory and Simulation of Materials (THEOS) and National Centre for Computational Design and Discovery of Novel Materials (NCCR MARVEL)), Switzerland and ROBERT BOSCH LLC, USA. All rights reserved
+# This file is distributed under the same license as the AiiDA Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AiiDA Tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 06:22+0000\n"
+"PO-Revision-Date: 2019-07-15 05:20+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../docs/pages/2018_EPFL_molsim/screening/methane-loading.md:1
+msgid "Compute methane loading for one MOF"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/methane-loading.md:4
+msgid ""
+"The average loading of the MOF at a given pressure will be computed using "
+"grand-canonical Monte Carlo (GCMC) simulations with the RASPA code."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/methane-loading.md:8
+msgid ""
+"The RASPA code needs several input parameters, some of which you will need "
+"to figure out"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/methane-loading.md:39
+msgid ""
+"Our simulations are performed under periodic boundary conditions. This "
+"means, we need to make our simulation cell large enough that a molecule will"
+" never interact with a two periodic copies of any of its neighbors. Given "
+"the cutoff radius of $12$ Angstroms, how often do you need to replicate the "
+"unit cell of the material?"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/methane-loading.md:46
+msgid "Hint: The CIF files include information on the size of the unit cell."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/methane-loading.md:49
+msgid ""
+"To make things more interesting, we are going to use different force fields."
+" Ask your instructor to give you a force field identifier."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/methane-loading.md:53
+msgid ""
+"You already performed a small GCMC calculation at 10 bar during the "
+"tutorial. Adapt the input file to your needs and run the calculation.Hint: "
+"Once running, the calculation should finish within 5 minutes."
+msgstr ""

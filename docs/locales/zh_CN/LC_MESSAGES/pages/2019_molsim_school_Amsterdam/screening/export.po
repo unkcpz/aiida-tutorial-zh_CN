@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE (Theory and Simulation of Materials (THEOS) and National Centre for Computational Design and Discovery of Novel Materials (NCCR MARVEL)), Switzerland and ROBERT BOSCH LLC, USA. All rights reserved
+# This file is distributed under the same license as the AiiDA Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AiiDA Tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 06:22+0000\n"
+"PO-Revision-Date: 2019-07-15 05:15+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/export.md:1
+msgid "Upload your results"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/export.md:3
+msgid ""
+"Once your calculations are finished, it's time to export and upload them to "
+"the tutorial server."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/export.md:11
+msgid ""
+"Finally, it's time to upload your results to the tutorial server and compare"
+" your result to those of the others."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/export.md:14
+msgid "What is the highest deliverable capacity you got?"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/export.md:15
+msgid "Did you pick the same material as some other participants?"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/export.md:16
+msgid ""
+"Since the upload includes the provenance of your calculations, you'll be "
+"able to check which parameters the others used by clicking on the points in "
+"the scatter plot."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/export.md:21
+msgid ""
+"That's it -- you've completed the AiiDA molsim tutorial, well done! Keep "
+"posted for AiiDA news on the AiiDA mailing list, in particular the upcoming "
+"AiiDA 1.0 release with many improvements and new features."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/export.md:24
+msgid ""
+"If you're interested in continuing along these lines, you may want to "
+"(optional):"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/export.md:26
+msgid ""
+"screen a few more materials to get a higher deliverable capacity (please do "
+"not run more than 5 at a time in order not to block the queue for the other "
+"participants)."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/export.md:28
+msgid ""
+"learn about how to change force fields in RASPA and play with the parameters"
+" to see how they impact the deliverable capacity"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/screening/export.md:30
+msgid ""
+"have a look at the extra challenge on CO2 capture (advanced, with less "
+"detailed instructions)."
+msgstr ""

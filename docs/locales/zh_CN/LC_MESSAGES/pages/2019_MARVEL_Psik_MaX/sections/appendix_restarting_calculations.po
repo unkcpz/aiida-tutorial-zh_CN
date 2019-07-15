@@ -1,0 +1,122 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE (Theory and Simulation of Materials (THEOS) and National Centre for Computational Design and Discovery of Novel Materials (NCCR MARVEL)), Switzerland and ROBERT BOSCH LLC, USA. All rights reserved
+# This file is distributed under the same license as the AiiDA Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AiiDA Tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 06:22+0000\n"
+"PO-Revision-Date: 2019-07-15 05:17+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/appendix_restarting_calculations.rst:1
+msgid ""
+"*These appendices consist of optional exercises, and are mentioned in "
+"earlier parts of the tutorial. Go through them only if you have time.*"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/appendix_restarting_calculations.rst:6
+msgid "Restarting calculations"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/appendix_restarting_calculations.rst:8
+msgid ""
+"Up till now, we have presented several cases where, for example, the wrong "
+"input parameters were passed to a calculation, causing it to fail. Often we "
+"had to retype a lot of code, to setup a new calculation with the correct "
+"inputs. In addition, there are many real-life scenarios where one would need"
+" to restart calculations from completed calculations with largely the same "
+"inputs. For example when we run molecular dynamics, we might want to add "
+"more time steps than we initially thought, or as another example you might "
+"want to refine the relaxation of a structure with tighter parameters."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/appendix_restarting_calculations.rst:13
+msgid ""
+"In this section, you will learn how to relaunch a calculation from one that "
+"has already completed, while having the chance to add or change inputs "
+"before launching it. As an example, let us first submit a total energy "
+"calculation using a parameters dictionary of the form:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/appendix_restarting_calculations.rst:34
+msgid ""
+"In this case, we set a very low number of self consistent iterations (3), "
+"which is too small to be able to reach the desired accuracy of 10\\ "
+":sup:`-14`. This means the calculation will not converge and will not be "
+"successful, despite there not being any actual mistake in the parameters "
+"dictionary."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/appendix_restarting_calculations.rst:37
+msgid ""
+"To easily restart from the previous calculation, instead of retyping all the"
+" inputs, you can simply use the ``get_builder_restart`` method of the "
+"``CalcJobNode``. Just like the ``get_builder`` method of the ``Process`` "
+"class, this will create an instance of the ``ProcessBuilder``, except this "
+"one will have all the inputs pre-populated based on the node. To do so, "
+"simply load the node of a terminated calculation job in a ``verdi shell``, "
+"that you want to restart from, e.g.:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/appendix_restarting_calculations.rst:46
+msgid ""
+"If you simply type ``restart_builder``, you can see that all the inputs have"
+" already been set to those that were used for the original calculation. The "
+"only thing that now remains to be done, is to replace those inputs that "
+"caused the failure in the first place."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/appendix_restarting_calculations.rst:55
+msgid ""
+"Simply giving the calculation some more steps in the convergence cycle will "
+"probably already fix the problem."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/appendix_restarting_calculations.rst:59
+msgid ""
+"We have to create a new ``Dict`` node as we are changing its contents, and "
+"the original input is immutable as it would break the provenance."
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/appendix_restarting_calculations.rst:61
+msgid ""
+"However, in this Quantum ESPRESSO example even more can be done, by using "
+"the results of the previous calculation to speed up the restart. To do so, "
+"we simply have to set the input ``parent_folder`` to the remote working "
+"directory of the old calculation, i.e.:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/appendix_restarting_calculations.rst:71
+msgid ""
+"Note that this particular step is specific to a ``PwCalculation``, but the "
+"restart builder concept works for any calculation class. Any of the inputs "
+"can be changed or set. For example, you may also want to record that this "
+"calculation is a restart, in addition to the provenance graph, by setting "
+"the label or description:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/appendix_restarting_calculations.rst:79
+msgid ""
+"Ultimately whatever needs to be changed for the restart is up to you, but "
+"the restart builder makes it a lot easier. Finally, to submit the restart, "
+"since it is a process builder, it works exactly as any other builder:"
+msgstr ""
+
+#: ../docs/pages/2019_MARVEL_Psik_MaX/sections/appendix_restarting_calculations.rst:87
+msgid ""
+"You can now inspect the restarted calculation to verify that this time it "
+"actually completed successfully. Using the restart builder, the required "
+"code to setup a calculation is much shorter than the one needed to launch a "
+"new one from scratch. There is no need to load or create many of the inputs "
+"such as the pseudopotentials, structures and k-points, because they were "
+"reused from the first calculation."
+msgstr ""

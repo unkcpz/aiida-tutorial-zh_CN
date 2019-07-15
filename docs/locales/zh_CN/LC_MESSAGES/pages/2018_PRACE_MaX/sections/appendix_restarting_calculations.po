@@ -1,0 +1,116 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE (Theory and Simulation of Materials (THEOS) and National Centre for Computational Design and Discovery of Novel Materials (NCCR MARVEL)), Switzerland and ROBERT BOSCH LLC, USA. All rights reserved
+# This file is distributed under the same license as the AiiDA Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AiiDA Tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 06:22+0000\n"
+"PO-Revision-Date: 2019-07-15 05:13+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../docs/pages/2018_PRACE_MaX/sections/appendix_restarting_calculations.md:1
+msgid "Restarting calculations"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/appendix_restarting_calculations.md:4
+msgid ""
+"Up to now, we have only presented cases in which we were passing wrong input"
+" parameters to the calculations, which required us to modify the input "
+"scripts and relaunch calculations from scratch. There are several other "
+"scenarios in which, more generally, we need to restart calculations from the"
+" last step that they have executed. For example when we run molecular "
+"dynamics, we might want to add more time steps than we initially thought, or"
+" as another example you might want to refine the relaxation of a structure "
+"with tighter parameters."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/appendix_restarting_calculations.md:6
+msgid ""
+"In this section, you will learn how to restart and/or modify a calculation "
+"that has run previously. As an example, let us first submit a total energy "
+"calculation using a parameters dictionary of the form:"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/appendix_restarting_calculations.md:26
+msgid ""
+"and submit the calculation with this input. In this case, we set a very low "
+"number of self consistent iterations (3), too small to be able to reach the "
+"desired accuracy of 10(^{-14}): therefore the calculation will not reach a "
+"complete end and will be flagged in a FAILED state. However, there is no "
+"mistake in the parameter dictionary."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/appendix_restarting_calculations.md:28
+msgid ""
+"Now, create a new script file, where you will try to restart and correct the"
+" input dictionary. We first load the calculation that has just failed (let’s"
+" call it c1)"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/appendix_restarting_calculations.md:34
+msgid ""
+"(take care of using the correct PK). Then, create a new Builder builder "
+"which is set to reuse all inputs from the previous step, with a few "
+"adaptations to the input parameters that might be needed by the code to "
+"properly deal with restarts."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/appendix_restarting_calculations.md:45
+msgid "The flag usage (most of them are optional) is:"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/appendix_restarting_calculations.md:47
+msgid ""
+"use_output_structure: if True and old_calc has an output structure, the new "
+"calculation will use it as input;"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/appendix_restarting_calculations.md:49
+msgid ""
+"restart_from_beginning: if False the new calculation will start from the "
+"charge density of old_calc, it will start from the beginning otherwise;"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/appendix_restarting_calculations.md:51
+msgid ""
+"force_restart: if True, the new calculation will be created even if old_calc"
+" is not in a FINISHED job state."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/appendix_restarting_calculations.md:53
+msgid ""
+"Since this calculation has exactly the same parameters of before, we have to"
+" modify the input parameters and increase electron_maxstep to a larger "
+"value. To this aim, let’s load the dictionary of values and change it"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/appendix_restarting_calculations.md:61
+msgid ""
+"Note that you cannot modify the old_parameters object: it has been used by "
+"calculation c1 and is saved in the database; hence a modification would "
+"break the provenance. We have to create a new ParameterData and pass it to "
+"c2:"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/appendix_restarting_calculations.md:69
+msgid "Now you can launch the new calculation"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/appendix_restarting_calculations.md:77
+msgid ""
+"that this time can proceed until the end and return converged total energy. "
+"Using the restart method, the script is much shorter than the one needed to "
+"launch a new one from scratch: you didn’t need to define pseudopotentials, "
+"structures and k-points, which are the same as before. You can indeed "
+"inspect the new calculation to check that now it actually completed "
+"successfully."
+msgstr ""

@@ -1,0 +1,44 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE (Theory and Simulation of Materials (THEOS) and National Centre for Computational Design and Discovery of Novel Materials (NCCR MARVEL)), Switzerland and ROBERT BOSCH LLC, USA. All rights reserved
+# This file is distributed under the same license as the AiiDA Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AiiDA Tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 06:22+0000\n"
+"PO-Revision-Date: 2019-07-15 05:20+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/preparation.md:1
+msgid "Preparation"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/preparation.md:4
+msgid ""
+"Start the Quantum Mobile virtual machine, open a terminal window and type"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/preparation.md:11
+msgid "This activates the virtual environment, in which AiiDA is installed."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/preparation.md:13
+msgid ""
+"Since Quantum Mobile focuses on ab initio calculations, it is missing some "
+"aiida plugins we are going to need. Let’s install them (this can take 3 "
+"minutes):"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/preparation.md:21
+msgid ""
+"Before we start creating data ourselves, we are going to look at an existing"
+" AiiDA database. Let’s import one from the web:"
+msgstr ""

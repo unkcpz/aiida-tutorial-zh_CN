@@ -1,0 +1,125 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE (Theory and Simulation of Materials (THEOS) and National Centre for Computational Design and Discovery of Novel Materials (NCCR MARVEL)), Switzerland and ROBERT BOSCH LLC, USA. All rights reserved
+# This file is distributed under the same license as the AiiDA Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AiiDA Tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 06:22+0000\n"
+"PO-Revision-Date: 2019-07-15 05:15+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/provenance-graph.md:1
+msgid "Browsing the provenance graph"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/provenance-graph.md:4
+msgid ""
+"Before we start creating data ourselves, we are going to look at an AiiDA "
+"database already created by someone else. Let’s import one from the web:"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/provenance-graph.md:11
+msgid ""
+"Contrary to most databases, AiiDA databases contain not only results of "
+"calculations but also their inputs and information on how a particular "
+"result was obtained. This information (provenance) is stored in the form of "
+"a directed acyclic graph (DAG)."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/provenance-graph.md:16
+msgid ""
+"In the following, we are going to introduce you to different ways of "
+"browsing this graph and ask you find out some information regarding the "
+"database you just imported."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/provenance-graph.md:19
+msgid "The EXPLORE interface"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/provenance-graph.md:22
+msgid ""
+"The most intuitive way to browse AiiDA graphs is to use the interactive "
+"provenance explorer available on Materials Cloud."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/provenance-graph.md:25
+msgid "For it to work, we first need to start the AiiDA REST API:"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/provenance-graph.md:37
+msgid "Now"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/provenance-graph.md:39
+msgid "Open a browser inside Quantum Mobile"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/provenance-graph.md:40
+msgid ""
+"Inside this browser, open the link to the provenance "
+"browser{:target=\"_blank\"}"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/provenance-graph.md:41
+msgid ""
+"In the form, paste the (local) URL http://127.0.0.1:5000/api/v2 of our REST "
+"API and click \"GO!\""
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/provenance-graph.md:43
+msgid ""
+"NoteThe provenance browser is also available on Materials Cloud but we are "
+"using a more recent development version."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/provenance-graph.md:46
+msgid ""
+"Once the provenance explorer has been loaded by your browser, it is "
+"communicating directly with the REST API and your data never leaves your "
+"computer."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/provenance-graph.md:49
+msgid ""
+"Start by clicking on the Details of a NetworkCalculation node (if you ever "
+"get lost, just go to the Details subpage, enter "
+"bba8402d-6559-4fd8-ad32-84625a6221f0 and click on the GO button)."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/provenance-graph.md:53
+msgid "Exercise"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/provenance-graph.md:55
+msgid "Use the graph explorer in order to figure out:"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/provenance-graph.md:57
+msgid "What code was used and what was the name of the executable?"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/provenance-graph.md:58
+msgid "When was the calculation run and who run it?"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/provenance-graph.md:59
+msgid "How much memory was requested for the calculation?"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/provenance-graph.md:60
+msgid "What inputs did the calculation take?"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/tutorial/provenance-graph.md:61
+msgid "What other types of calculation was the Cif input structure used in?"
+msgstr ""

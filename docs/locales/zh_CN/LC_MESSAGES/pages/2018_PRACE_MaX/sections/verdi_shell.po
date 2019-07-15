@@ -1,0 +1,394 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE (Theory and Simulation of Materials (THEOS) and National Centre for Computational Design and Discovery of Novel Materials (NCCR MARVEL)), Switzerland and ROBERT BOSCH LLC, USA. All rights reserved
+# This file is distributed under the same license as the AiiDA Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AiiDA Tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 06:22+0000\n"
+"PO-Revision-Date: 2019-07-15 05:14+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:1
+msgid "Verdi shell and AiiDA objects"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:4
+msgid ""
+"In this section we will use an interactive ipython environment with all the "
+"basic AiiDA classes already loaded. We propose two realizations of such a "
+"tool. The first consist of a special ipython shell where all the AiiDA "
+"classes, methods and functions are accessible. Type in the terminal"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:10
+msgid ""
+"For all the everyday AiiDA-based operations, i.e. creating, querying and "
+"using AiiDA objects, the verdi shell is probably the best tool. In this "
+"case, we suggest that you use two terminals, one for the verdi shell and one"
+" to execute bash commands."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:12
+msgid ""
+"The second option is based on jupyter notebooks and is probably most "
+"suitable to the purposes of our tutorial. Go to the browser where you have "
+"opened jupyter and click New (\\to) Python 2 (top right corner). This will "
+"open an ipython notebook based on cells where you can type portions of "
+"python code. The code will not be executed until you press Shift+Enter from "
+"within a cell. Type in the first cell"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:18
+msgid ""
+"and execute it. This will set exactly the same environment as the verdi "
+"shell. The notebook will be automatically saved upon any modification and "
+"when you think you are done, you can export your notebook in many formats by"
+" going to File (\\to) Download as. We suggest you to have a look to the "
+"drop-down menus Insert and Cell where you will find the main commands to "
+"manage the cells of your notebook. The verdi shell and the jupyter notebook "
+"are completely equivalent. Use either according to your personal preference."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:20
+msgid ""
+"Note: you will still need sometimes to type command-line instructions in "
+"bash in the first terminal you opened today. To differentiate these from the"
+" commands to be typed in the verdi shell, the latter will be marked in this "
+"document by a vertical line on the left, like:"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:26
+msgid ""
+"while command-line instructions in bash to be typed on a terminal will be "
+"encapsulated between horizontal lines:"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:32
+msgid ""
+"Alternatively, to avoid changing terminal, you can execute bash commands "
+"within the verdi shell or the notebook adding an exclamation mark before the"
+" command itself"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:38
+msgid "Loading a node[load<sub>n</sub>ode]"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:41
+msgid ""
+"Most AiiDA objects are represented by nodes, identified in the database by "
+"its pk number (an integer). You can access a node using the following "
+"command in the shell:"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:47
+msgid ""
+"Load a node using one of the calculation pks visible in the graph you "
+"displayed in the previous section of the tutorial. Then get the energy of "
+"the calculation with the command"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:53
+msgid "You can also type"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:59
+msgid ""
+"and then press TAB to see all the possible output results of the "
+"calculation."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:61
+msgid "Loading different kinds of nodes"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:64
+msgid "Pseudopotentials"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:66
+msgid ""
+"From the graph displayed in Section [sec:aiida<sub>g</sub>raph], find the pk"
+" of the barium pseudopotential file (LDA). Load it and verify that it "
+"describes barium. Type"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:73
+msgid ""
+"All methods of UpfData are accessible by typing upf. and then pressing TAB."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:75
+msgid "k-points"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:77
+msgid ""
+"A set of k-points in the Brillouin zone is represented by an instance of the"
+" KpointsData class. Choose one from the graph of Section "
+"[sec:aiida<sub>g</sub>raph], load it as kpoints and inspect its content:"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:83
+msgid ""
+"Then get the full (explicit) list of k-points belonging to this mesh using"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:89
+msgid ""
+"If you incurred in a AttributeError, it means that the kpoints instance does"
+" not represent a regular mesh but rather a list of k-points defined by their"
+" crystal coordinates (typically used when plotting a band structure). In "
+"this case, get the list of k-points coordinates using"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:95
+msgid "If you prefer Cartesian (rather than crystal) coordinates, type"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:101
+msgid ""
+"For later use in this tutorial, let us try now to create a kpoints instance,"
+" to describe a regular (2\\times2\\times2) mesh of k-points, centered at the"
+" Gamma point (i.e. without offset). This can be done with the following "
+"commands:"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:111
+msgid ""
+"The import performed in the first line is however unpractical as it requires"
+" to remember the exact location of the module containing the KpointsData "
+"class. Instead, it is easier to use the DataFactory function instead of an "
+"explicit import."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:117
+msgid ""
+"This function loads the appropriate class defined in a string (here "
+"array.kpoints).[1] Therefore, KpointsData is not a class instance, but the "
+"kpoints class itself!"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:119
+msgid "Parameters"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:121
+msgid ""
+"Nested dictionaries with individual parameters, as well as lists and arrays,"
+" are represented in AiiDA with ParameterData objects. Get the PK and load "
+"the input parameters of a calculation in the graph of Section "
+"[sec:aiida<sub>g</sub>raph]. Then display its content by typing"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:127
+msgid ""
+"where params is the ParameterData node you loaded. Modify the dictionary "
+"content so that the wave-function cutoff is now set to 20 Ry. Note that you "
+"cannot modify an object already stored in the database. To save the "
+"modification, you must create a new ParameterData object. Similarly to what "
+"discussed before, first load the ParameterData class by typing"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:133
+msgid ""
+"Then an instance of the class (i.e. the parameter object that we want to "
+"create) is created and initialized by the command"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:139
+msgid ""
+"where YOUR_DICT is the modified dictionary. Note that the parameter object "
+"is not yet stored in the database. In fact, if you simply type new_params in"
+" the verdi shell, you will be prompted with a string notifying you the "
+"“unstored” status. To save an entry in the database corresponding to the "
+"new_params object, you need to type a last command in the verdi shell:"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:145
+msgid "Structures"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:147
+msgid ""
+"Find a structure in the graph of Section [sec:aiida<sub>g</sub>raph] and "
+"load it. Display its chemical formula, atomic positions and species using"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:154
+msgid ""
+"where structure is the structure you loaded. If you are familiar with ASE "
+"and PYMATGEN, you can convert this structure to those formats by typing"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:161
+msgid ""
+"Let’s try now to define a new structure to study, specifically a silicon "
+"crystal. In the verdi shell, define a cubic unit cell as a (3\\times3) "
+"matrix, with lattice parameter (a_{lat}=5.4) Å:"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:168
+msgid ""
+"<span>Note</span>: Default units for crystal structure cell and coordinates "
+"in AiiDA are Å."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:170
+msgid ""
+"Structures in AiiDA are instances of StructureData class: load it in the "
+"verdi shell"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:176
+msgid ""
+"Now, initialize the class instance (i.e. is the structure we want to study) "
+"by the command"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:182
+msgid ""
+"which sets the cubic cell defined before. From now on, you can access the "
+"cell with the command"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:188
+msgid ""
+"Finally, append each of the 2 atoms of the cell command. You can do it using"
+" commands like"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:194
+msgid ""
+"for the first ‘Si’ atom. Repeat it for the other atomic site "
+"(\\left(0,0,0\\right)). You can access and inspect[2] the structure sites "
+"with the command"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:200
+msgid ""
+"If you make a mistake, start over from structure = "
+"StructureData(cell=the_cell), or equivalently use structure.clear_kinds() to"
+" remove all kinds (atomic species) and sites. Alternatively, AiiDA "
+"structures can also be converted directly from ASE  structures using[3]"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:210
+msgid ""
+"Now you can store the new structure object in the database with the command:"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:216
+msgid ""
+"Finally, we can also import the silicon structure from an external (online) "
+"repository such as the Crystallography Open Database :"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:227
+msgid "In that case two duplicate structures are found for Si."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:229
+msgid "Accessing inputs and outputs"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:232
+msgid "Load again the calculation node used in Section [load<sub>n</sub>ode]:"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:238
+msgid "Then type"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:244
+msgid ""
+"and press TAB: you will see all the link names between the calculation and "
+"its input nodes. You can use a specific linkname to access the corresponding"
+" input node, e.g.:"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:250
+msgid ""
+"You can use the inp method multiple times in order to browse the graph. For "
+"instance, if the input structure node that you just accessed is the output "
+"of another calculation, you can access the latter by typing"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:256
+msgid ""
+"Here calc2 is the PwCalculation that produced the structure used as an input"
+" for calc."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:258
+msgid "Similarly, if you type:"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:264
+msgid ""
+"and then TAB, you will list all output link names of the calculation. One of"
+" them leads to the structure that was the input of calc we loaded "
+"previously:"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:270
+msgid ""
+"Note that links have a single name, that was assigned by the calculation "
+"that used the corresponding input or produced the corresponding output, as "
+"illustrated in Fig. [fig:graph]."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:272
+msgid ""
+"For a more programmatic approach, you can get a list of the inputs and "
+"outputs of a node, say calc, with the methods"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:279
+msgid ""
+"Alternatively, you can get a dictionary where the keys are the link names "
+"and the values are the linked objects, with the methods"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:286
+msgid ""
+"Note: You will sometime see entries in the dictionary with names like "
+"output_kpoints_3511. These exist because standard python dictionaries "
+"require unique key names while link labels may not be unique. Therefore, we "
+"use the link label plus the PK separated by underscores."
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:288
+msgid "Pseudopotential families"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:291
+msgid ""
+"Pseudopotentials in AiiDA are grouped in “families” that contain one single "
+"pseudo per element. We will see how to work with UPF pseudopotentials (the "
+"format used by Quantum ESPRESSO and some other codes). Download and untar "
+"the SSSP  pseudopotentials via the commands:"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:299
+msgid ""
+"Then you can upload the whole set of pseudopotentials to AiiDA by to the "
+"following verdi command:"
+msgstr ""
+
+#: ../docs/pages/2018_PRACE_MaX/sections/verdi_shell.md:305
+msgid ""
+"In the command above, SSSP_efficiency_pseudos is the folder containing the "
+"pseudopotentials, ’SSSP’ is the name given to the family and the last "
+"argument is its description. Finally, you can list all the pseudo families "
+"present in the database with"
+msgstr ""

@@ -1,0 +1,258 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE (Theory and Simulation of Materials (THEOS) and National Centre for Computational Design and Discovery of Novel Materials (NCCR MARVEL)), Switzerland and ROBERT BOSCH LLC, USA. All rights reserved
+# This file is distributed under the same license as the AiiDA Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AiiDA Tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 06:22+0000\n"
+"PO-Revision-Date: 2019-07-15 05:19+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:1
+msgid "Queries in AiiDA: The QueryBuilder {#sec:querybuilder}"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:4
+msgid ""
+"In this part of the tutorial we will focus on how to query our database "
+"using a querying tool for AiiDA called the QueryBuilder. Queries are, very "
+"loosely defined, questions to your database. We will first show you some "
+"simple examples and tasks on how to explore your database. Then we will "
+"proceed to a more concrete exercise on the screening of magnetic and "
+"metallic perovskites.\\"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:11
+msgid "Task 1 - Introduction to QueryBuilder"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:14
+msgid ""
+"| Node & subclasses |  Number in DB |-------------------| -------------- |"
+"       Node        |      4707 |   StructureData   |      621 |   "
+"ParameterData   |      1338 |    KpointsData    |      861 |      UpfData"
+"      |       99 |  JobCalculation   |      448"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:23
+msgid ""
+": List of some Node subclasses and how many times they occur in our test "
+"database."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:26
+msgid "[fig.types]"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:28
+msgid ""
+"In this task we will use the QueryBuilder to do some basic queries and "
+"understand our database. As a first step we should import our querying tool,"
+" the QueryBuilder."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:32
+msgid "from aiida.orm.querybuilder import QueryBuilder"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:34
+msgid ""
+"After the above import, we create our first query. To do so, we will have to"
+" instantiate a QueryBuilder instance:"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:41
+msgid ""
+"Our query is still empty, we have not yet defined what we want to see. For "
+"example, we will ask for all the nodes of our database. This is as simple as"
+" appending the Node class to the query that we construct."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:49
+msgid ""
+"At this point, we can finish our query by asking back all nodes and by "
+"typing"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:56
+msgid ""
+"However, this command will return us all the Nodes directly, which may not "
+"be the most wise thing to do considering that is the biggest family of AiiDA"
+" stored objects that we can query. To understand the size of the result, we "
+"can type the following command:"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:65
+msgid ""
+"If you are interested to retrieve a subclass of a node, append that specific"
+" subclass instead of Node:"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:75
+msgid "Exercise:"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:77
+msgid ""
+"Try now to find the number of instances for some subclasses of Node (e.g. "
+"StructureData, ParameterData, etc.) that are stored in your database. The "
+"result should look like . Of course, the numbers can be different!"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:82
+msgid ""
+"Comment: If you are familiar with the SQL (Structured Query Language) syntax"
+" then you may wonder what the issued SQL command is. This can be easily seen"
+" by typing:"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:90
+msgid ""
+"Comment: If you want to get inspired by the available QueryBuilder options "
+"you can just press the tab key in an interactive shell (after typing qb.) to"
+" see the available options."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:94
+msgid ""
+"Comment: After you run a query, a new QueryBuilder instance needs to be "
+"defined if you want to make a new query."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:97
+msgid "Task 2 - Projections and filters"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:100
+msgid ""
+"|  Operator   |         Datatype         |               Example "
+"|-------------| -------------------------| "
+"------------------------------------ |     ==      |            All"
+"           |              {'==':12} |     in      |            All"
+"           |    {'in':['FINISHED', 'PARSING']} | >,<,<=,>= |  floats, "
+"integers, dates |             {'>':5.2} |    like     |           Chars"
+"          |       {'like':'calculation%'} |    ilike    |           Chars"
+"          |       {'ilike':'caLculAtioN%'} |     or      |"
+"                          |  {'or':[{'<':5.3}, {'>':6.3}]} |     and     |"
+"                          |  {'and':[{'>':5.3}, {'<':6.3}]}"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:110
+msgid ": Operators currently implemented for all backends."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:112
+msgid "[tab.filterops]"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:114
+msgid ""
+"In database language performing a projection means to extract one or more "
+"specific columns from a table. In the AiiDA language this is equivalent to "
+"say that we select what properties a query should return out of the queried "
+"objects. For example, we might be interested only in the id of a set of "
+"nodes (or their creation date, or any stored value). To this purpose we "
+"should suitably instruct a QueryBuilder object by means of the \"project\" "
+"key. For example, if we would like to get all the ids of the nodes, we would"
+" type the following:"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:127
+msgid ""
+"|---------| -------------------------| |Entity   | Properties               "
+"| |---------| -------------------------| |Node     | id, uuid, type, label, "
+"description, ctime, mtime| |Computer | id, uuid, name, hostname, "
+"description, enabled, transport_type, scheduler_type| |User     | id, email,"
+" first_name, last_name, institution| |Group    | id, uuid, name, type, time,"
+" description| |---------| -------------------------|"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:136
+msgid ": A selection of entities and some of their properties."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:138
+msgid "[tab.properties]"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:140
+msgid ""
+"Please note that if you would like to perform an operation on the pk of a "
+"node, you should use the keyword id in QueryBuilder queries."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:143
+msgid ""
+"Most likely, performing a query implies to select only those elements that "
+"fulfill certain criteria. For example, we might want to select all the "
+"calculations that were launched on a specific date. In database language, "
+"this is called \"adding a filter\" to a query. A filter is a boolean "
+"operator that returns True or False. lists all operators that we "
+"implemented. A selection of entities and some of their properties that you "
+"can use at your projections and filters can be found at table ."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:151
+msgid ""
+"If you want to add filters to your query, you simply add the filters keyword"
+" with a dictionary. Suppose you want to know the creation date of a "
+"structure of which you know the uuid:"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:164
+msgid ""
+"Try it out! There is also the possibility to combine multiple filters on the"
+" same object using the \"and\" or the \"or\" keyword in the filter section. "
+"Let's see an example."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:181
+msgid ""
+"In the above example we added an \"or\" keyword between the two filters. The"
+" query return every structure in the database that was created in the last "
+"12 days or is named \"graphene\"."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:185
+msgid "Hints for the exercises:"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:187
+msgid ""
+"The operator '>', '<' works with date-type properties with the expected "
+"behavior."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:190
+msgid ""
+"For your date comparisons you will need to create a datetime object to which"
+" you can assign a date of your preference. You will have to do the necessary"
+" import (from datetime import datetime) and create an object by giving a "
+"specific date. E.g. datetime(2015, 12, 26). For further information, you can"
+" consult the Python's online documentation."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:197
+msgid "Exercises:"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:199
+msgid ""
+"Write a query that returns all instances of StructureData that have been "
+"created after the 1st of January 2016."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/queries.md:202
+msgid ""
+"Write a query that returns all instances of Group whose name starts with "
+"\"tutorial\"."
+msgstr ""

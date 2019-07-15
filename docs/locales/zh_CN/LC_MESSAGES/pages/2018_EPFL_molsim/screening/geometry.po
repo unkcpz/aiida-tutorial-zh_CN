@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE (Theory and Simulation of Materials (THEOS) and National Centre for Computational Design and Discovery of Novel Materials (NCCR MARVEL)), Switzerland and ROBERT BOSCH LLC, USA. All rights reserved
+# This file is distributed under the same license as the AiiDA Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AiiDA Tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 06:22+0000\n"
+"PO-Revision-Date: 2019-07-15 05:20+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../docs/pages/2018_EPFL_molsim/screening/geometry.md:1
+msgid "Perform geometric analysis of one MOF"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/geometry.md:4
+msgid ""
+"Use the zeo++ code to analyze the structure, such as the volume inside the "
+"MOF that is accessible to methane."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/geometry.md:8
+msgid "To make things simple, start with one MOF: DSoLANSUKYIH.cif"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/geometry.md:10
+msgid "Set up the Deneb computer at EPFL"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/geometry.md:14
+msgid "Import the deneb-molsim computer and its codes into AiiDA"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/geometry.md:22
+msgid "Generate an SSH key pair for passwordless connection"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/geometry.md:42
+msgid "configure your personal access to the deneb-molsim computer"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/geometry.md:67
+msgid "Finally, test your new computer"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/geometry.md:73
+msgid ""
+"Compute the density, accessible volume and accessible surface area using "
+"zeo++."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/geometry.md:77
+msgid ""
+"Use the zeo++ web site to figure out what the -ha, -res, -sa, -volpo command"
+" line options do."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/geometry.md:81
+msgid "What is an appropriate value for the probe radius r?"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/screening/geometry.md:116
+msgid ""
+"Remember: Use verdi run <script.py> to run python scripts in the same "
+"environment as in the verdi shell."
+msgstr ""

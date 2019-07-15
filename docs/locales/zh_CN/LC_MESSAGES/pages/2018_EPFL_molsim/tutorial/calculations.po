@@ -1,0 +1,173 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE (Theory and Simulation of Materials (THEOS) and National Centre for Computational Design and Discovery of Novel Materials (NCCR MARVEL)), Switzerland and ROBERT BOSCH LLC, USA. All rights reserved
+# This file is distributed under the same license as the AiiDA Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AiiDA Tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 06:22+0000\n"
+"PO-Revision-Date: 2019-07-15 05:20+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/calculations.rst:2
+msgid "Submit, monitor and debug calculations"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/calculations.rst:4
+msgid ""
+"The goal of this section is to understand how to create new data in AiiDA. "
+"We will launch a Grand Canonical Monte Carlo simulation and check its "
+"results. While for now we will do it ‘manually', workflows (that we will "
+"learn later in this tutorial) can automate this procedure considerably."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/calculations.rst:11
+msgid "Computer setup and configuration"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/calculations.rst:13
+msgid ""
+"For the tutorial, we've created a “virtual supercomputer” on the Amazon "
+"elastic cloud, where you can submit your calculations."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/calculations.rst:16
+msgid "Please set up the computer as follows:"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/calculations.rst:49
+msgid "At this point, the computer node has been created in the database, see"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/calculations.rst:55
+msgid "but it hasn't yet been configured."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/calculations.rst:57
+msgid "In order to access the computer, download the SSH key"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/calculations.rst:63
+msgid "and use it to configure the ``aws`` computer:"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/calculations.rst:89
+msgid "Finally, let aiida test the computer:"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/calculations.rst:96
+msgid "Code setup and configuration"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/calculations.rst:98
+msgid ""
+"Next, we need to let AiiDA know about the computer codes available on our "
+"“virtual supercomputer”."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/calculations.rst:101
+msgid ""
+"Let's set up the `RASPA2 <https://github.com/numat/RASPA2>`__ code as "
+"follows:"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/calculations.rst:132
+msgid "The list of codes should now include your new code ``raspa@aws``"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/calculations.rst:139
+msgid "The AiiDA daemon"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/calculations.rst:141
+msgid ""
+"First of all check that the AiiDA daemon is actually running. The AiiDA "
+"daemon is a program running all the time in the background, checking if new "
+"calculations appear and need to be submitted to the scheduler. The daemon "
+"also takes care of all the necessary operations before the calculation "
+"submission, and after the calculation has completed on the cluster. Type in "
+"the terminal"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/calculations.rst:152
+msgid "If the daemon is running, the output should look like"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/calculations.rst:160
+msgid "If this is not the case, type in the terminal"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/calculations.rst:166
+msgid "to start the daemon."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/calculations.rst:169
+msgid "Creating a new calculation"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/calculations.rst:171
+msgid ""
+"To start please `download the AiiDA submission script "
+"<./assets/2018_EPFL_molsim/raspa_submission.zip>`__. To launch a "
+"calculation, you will need to interact with AiiDA mainly in the ``verdi "
+"shell``. We strongly suggest you to first try the commands in the shell, and"
+" then copy them in a script “test\\_pw.py” using a text editor. This will be"
+" very useful for later execution of a similar series of commands."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/calculations.rst:179
+msgid ""
+"**The best way to run python scripts using AiiDA functionalities is to run "
+"them in a terminal by means of the command**"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/calculations.rst:186
+msgid ""
+"Every calculation sent to a cluster is linked to a code, which describes the"
+" executable file to be used. Therefore, first load the suitable code:"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/calculations.rst:194
+msgid ""
+"Here ``test_and_get_code`` is an AiiDA function handling all possible codes,"
+" and ``code`` is a class instance provided as ``codename`` (see the first "
+"part of the tutorial for listing all codes installed in your AiiDA machine)."
+" For this example use codename ``raspa@aws``."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/calculations.rst:199
+msgid ""
+"AiiDA calculations are instances of the class ``Calculation``, more "
+"precisely of one of its subclasses, each corresponding to a code specific "
+"plugin (for example, the Raspa plugin). We create a new calculation using "
+"the ``new_calc`` method of the ``code`` object:"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/calculations.rst:208
+msgid ""
+"This creates and initializes an instance of the ``RaspaCalculation`` class, "
+"the subclass associated with the ``raspa`` plugin. Sometimes, you might find"
+" convenient to annotate information assigning a (short) label or a (long) "
+"description, like:"
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/calculations.rst:218
+msgid ""
+"This information will be saved in the database for later query or "
+"inspection."
+msgstr ""
+
+#: ../docs/pages/2018_EPFL_molsim/tutorial/calculations.rst:221
+msgid ""
+"Now you have to specify the number of machines (a.k.a. cluster nodes) you "
+"are going to run on and the maximum time allowed for the calculation — this "
+"information is passed to the scheduler that handles the queue:"
+msgstr ""

@@ -1,0 +1,111 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE (Theory and Simulation of Materials (THEOS) and National Centre for Computational Design and Discovery of Novel Materials (NCCR MARVEL)), Switzerland and ROBERT BOSCH LLC, USA. All rights reserved
+# This file is distributed under the same license as the AiiDA Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AiiDA Tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 06:22+0000\n"
+"PO-Revision-Date: 2019-07-15 05:15+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/geometric-properties.rst:2
+msgid "Geometric properties"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/geometric-properties.rst:4
+msgid ""
+"There are several metrics we want you to use to pre-evaluate the performance"
+" of a material for methane storage."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/geometric-properties.rst:7
+msgid ""
+"We used `Zeo++ <http://www.zeoplusplus.org/>`__ to compute this properties."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/geometric-properties.rst:10
+msgid ""
+"*largest included sphere (Di)*, the largest sphere that can fit the largest "
+"pore of the structure"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/geometric-properties.rst:13
+msgid ""
+"*largest free sphere (Df)*, the largest spherical probe that can percolate "
+"through the material"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/geometric-properties.rst:16
+msgid ""
+"*largest included sphere along the free sphere path (Dif)*, the largest "
+"sphere that can fit along the channel where the largest free sphere was "
+"evaluated. Therefore Di = Dif if there is only one channel or if the largest"
+" pore is along the largest channel."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/geometric-properties.rst:24
+msgid "Graphical illustration of Di, Df and Dif."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/geometric-properties.rst:26
+msgid ""
+"*internal surface area*, considering the atoms of the frameworks as spheres,"
+" and rolling a spherical probe on their surface. By convention the probe has"
+" a radius of 1.86 Angstrom, half the kinetic diameter of the nitrogen "
+"molecule. This is a purely geometrical quantity and may differ a lot with "
+"the measured BET surface `(Rouquerol2007) "
+"<http://www.sciencedirect.com/science/article/pii/S0167299107800085>`__."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/geometric-properties.rst:33
+msgid ""
+"*geometric pore volume*, considering the atoms of the frameworks as spheres,"
+" all the volume outside the spheres."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/geometric-properties.rst:36
+msgid ""
+"*probe-occupiable pore volume* (or Connolly volume ), considering the atoms "
+"of the frameworks as spheres, all the pore volume where a spherical probe "
+"could fit. The pore volume can also be distinguished into accessible or not-"
+"accessible, if the probe can actually diffuse or not inside that space: in "
+"the second case you are expected to use blocking spheres to avoid the "
+"insertion of gas molecule in Monte Carlo algorithms."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/geometric-properties.rst:44
+msgid ""
+"*void fraction*, fraction of pore volume over the total volume of the unit "
+"cell. If you wonder why sometimes it is called \"helium void fraction\", it "
+"was a convention to use the helium atom as probe to compute (BC: NOT measure"
+" experimentally!) this quantity. However, using helium to compute the void "
+"fraction is not very physically meaningful `(Ongari2017) "
+"<https://pubs.acs.org/doi/10.1021/acs.langmuir.7b01682>`__."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/geometric-properties.rst:55
+msgid "Explanation of the different kind of pore volumes."
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/geometric-properties.rst:57
+msgid ""
+"*number of channels*, the number of unconnected channels of the porous "
+"material where the probe can diffuse through"
+msgstr ""
+
+#: ../docs/pages/2019_molsim_school_Amsterdam/theoretical/geometric-properties.rst:60
+msgid ""
+"It is very interesting to compare these metrics to the performance of your "
+"materials for a certain application, to be able to find any correlation that"
+" could help to discover the best framework for that application. See for "
+"example `Wilmer2012 <http://xlink.rsc.org/?DOI=c2ee23201d>`__."
+msgstr ""
