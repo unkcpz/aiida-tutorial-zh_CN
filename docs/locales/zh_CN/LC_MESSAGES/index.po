@@ -11,10 +11,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AiiDA Tutorials\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-15 06:22+0000\n"
-"PO-Revision-Date: 2019-07-15 05:12+0000\n"
+"POT-Creation-Date: 2019-07-15 18:01+0000\n"
+"PO-Revision-Date: 2019-07-15 18:01+0000\n"
 "Last-Translator: Jason.Eu <morty.yu@yahoo.com>, 2019\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/scut-ccmp/teams/98995/zh_CN/)\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/aiidateam/teams/98967/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../docs/index.rst:7 ../docs/index.rst:7
 msgid "Tutorial materials"
-msgstr "教程及材料"
+msgstr "教程及相关材料"
 
 #: ../docs/index.rst:19 ../docs/index.rst:19
 msgid "Demos"
@@ -35,7 +35,7 @@ msgstr "视频"
 
 #: ../docs/index.rst:2
 msgid "AiiDA Tutorials"
-msgstr "AiIDA 教程"
+msgstr "AiiDA教程"
 
 #: ../docs/index.rst:4
 msgid ""
