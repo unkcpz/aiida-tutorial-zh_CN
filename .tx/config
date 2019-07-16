@@ -1,349 +1,349 @@
 [main]
 host = https://www.transifex.com
 
-[aiida-tutorial-zh.index]
+[aiida-tutorials.index]
 file_filter = docs/locales/<lang>/LC_MESSAGES/index.po
 source_file = locale/index.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2017_MARVEL_Psik_MaX--index]
+[aiida-tutorials.pages--2017_MARVEL_Psik_MaX--index]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2017_MARVEL_Psik_MaX/index.po
 source_file = locale/pages/2017_MARVEL_Psik_MaX/index.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2018_PRACE_MaX--index]
+[aiida-tutorials.pages--2018_PRACE_MaX--index]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2018_PRACE_MaX/index.po
 source_file = locale/pages/2018_PRACE_MaX/index.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2018_PRACE_MaX--sections--appendix_restarting_calculations]
+[aiida-tutorials.pages--2018_PRACE_MaX--sections--appendix_restarting_calculations]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2018_PRACE_MaX/sections/appendix_restarting_calculations.po
 source_file = locale/pages/2018_PRACE_MaX/sections/appendix_restarting_calculations.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2018_PRACE_MaX--sections--preliminaries]
+[aiida-tutorials.pages--2018_PRACE_MaX--sections--preliminaries]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2018_PRACE_MaX/sections/preliminaries.po
 source_file = locale/pages/2018_PRACE_MaX/sections/preliminaries.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2018_PRACE_MaX--sections--bands]
+[aiida-tutorials.pages--2018_PRACE_MaX--sections--bands]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2018_PRACE_MaX/sections/bands.po
 source_file = locale/pages/2018_PRACE_MaX/sections/bands.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2018_PRACE_MaX--sections--querybuilder]
+[aiida-tutorials.pages--2018_PRACE_MaX--sections--querybuilder]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2018_PRACE_MaX/sections/querybuilder.po
 source_file = locale/pages/2018_PRACE_MaX/sections/querybuilder.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2018_PRACE_MaX--sections--verdi_cmdline]
+[aiida-tutorials.pages--2018_PRACE_MaX--sections--verdi_cmdline]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2018_PRACE_MaX/sections/verdi_cmdline.po
 source_file = locale/pages/2018_PRACE_MaX/sections/verdi_cmdline.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2018_PRACE_MaX--sections--appendix_workflow_logic]
+[aiida-tutorials.pages--2018_PRACE_MaX--sections--appendix_workflow_logic]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2018_PRACE_MaX/sections/appendix_workflow_logic.po
 source_file = locale/pages/2018_PRACE_MaX/sections/appendix_workflow_logic.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2018_PRACE_MaX--sections--calculations]
+[aiida-tutorials.pages--2018_PRACE_MaX--sections--calculations]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2018_PRACE_MaX/sections/calculations.po
 source_file = locale/pages/2018_PRACE_MaX/sections/calculations.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2018_PRACE_MaX--sections--appendix_input_validation]
+[aiida-tutorials.pages--2018_PRACE_MaX--sections--appendix_input_validation]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2018_PRACE_MaX/sections/appendix_input_validation.po
 source_file = locale/pages/2018_PRACE_MaX/sections/appendix_input_validation.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2018_PRACE_MaX--sections--appendix_queries]
+[aiida-tutorials.pages--2018_PRACE_MaX--sections--appendix_queries]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2018_PRACE_MaX/sections/appendix_queries.po
 source_file = locale/pages/2018_PRACE_MaX/sections/appendix_queries.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2018_PRACE_MaX--sections--workflows]
+[aiida-tutorials.pages--2018_PRACE_MaX--sections--workflows]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2018_PRACE_MaX/sections/workflows.po
 source_file = locale/pages/2018_PRACE_MaX/sections/workflows.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2018_PRACE_MaX--sections--verdi_shell]
+[aiida-tutorials.pages--2018_PRACE_MaX--sections--verdi_shell]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2018_PRACE_MaX/sections/verdi_shell.po
 source_file = locale/pages/2018_PRACE_MaX/sections/verdi_shell.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2019_molsim_school_Amsterdam--index]
+[aiida-tutorials.pages--2019_molsim_school_Amsterdam--index]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2019_molsim_school_Amsterdam/index.po
 source_file = locale/pages/2019_molsim_school_Amsterdam/index.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2019_molsim_school_Amsterdam--tutorial--queries]
+[aiida-tutorials.pages--2019_molsim_school_Amsterdam--tutorial--queries]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2019_molsim_school_Amsterdam/tutorial/queries.po
 source_file = locale/pages/2019_molsim_school_Amsterdam/tutorial/queries.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2019_molsim_school_Amsterdam--tutorial--verdi-commands]
+[aiida-tutorials.pages--2019_molsim_school_Amsterdam--tutorial--verdi-commands]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2019_molsim_school_Amsterdam/tutorial/verdi-commands.po
 source_file = locale/pages/2019_molsim_school_Amsterdam/tutorial/verdi-commands.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2019_molsim_school_Amsterdam--tutorial--python-interface]
+[aiida-tutorials.pages--2019_molsim_school_Amsterdam--tutorial--python-interface]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2019_molsim_school_Amsterdam/tutorial/python-interface.po
 source_file = locale/pages/2019_molsim_school_Amsterdam/tutorial/python-interface.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2019_molsim_school_Amsterdam--tutorial--setup]
+[aiida-tutorials.pages--2019_molsim_school_Amsterdam--tutorial--setup]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2019_molsim_school_Amsterdam/tutorial/setup.po
 source_file = locale/pages/2019_molsim_school_Amsterdam/tutorial/setup.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2019_molsim_school_Amsterdam--tutorial--provenance-graph]
+[aiida-tutorials.pages--2019_molsim_school_Amsterdam--tutorial--provenance-graph]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2019_molsim_school_Amsterdam/tutorial/provenance-graph.po
 source_file = locale/pages/2019_molsim_school_Amsterdam/tutorial/provenance-graph.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2019_molsim_school_Amsterdam--tutorial--candidate-selection]
+[aiida-tutorials.pages--2019_molsim_school_Amsterdam--tutorial--candidate-selection]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2019_molsim_school_Amsterdam/tutorial/candidate-selection.po
 source_file = locale/pages/2019_molsim_school_Amsterdam/tutorial/candidate-selection.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2019_molsim_school_Amsterdam--screening--export]
+[aiida-tutorials.pages--2019_molsim_school_Amsterdam--screening--export]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2019_molsim_school_Amsterdam/screening/export.po
 source_file = locale/pages/2019_molsim_school_Amsterdam/screening/export.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2019_molsim_school_Amsterdam--screening--methane-loading]
+[aiida-tutorials.pages--2019_molsim_school_Amsterdam--screening--methane-loading]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2019_molsim_school_Amsterdam/screening/methane-loading.po
 source_file = locale/pages/2019_molsim_school_Amsterdam/screening/methane-loading.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2019_molsim_school_Amsterdam--screening--calculations]
+[aiida-tutorials.pages--2019_molsim_school_Amsterdam--screening--calculations]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2019_molsim_school_Amsterdam/screening/calculations.po
 source_file = locale/pages/2019_molsim_school_Amsterdam/screening/calculations.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2019_molsim_school_Amsterdam--screening--screening]
+[aiida-tutorials.pages--2019_molsim_school_Amsterdam--screening--screening]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2019_molsim_school_Amsterdam/screening/screening.po
 source_file = locale/pages/2019_molsim_school_Amsterdam/screening/screening.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2019_molsim_school_Amsterdam--theoretical--settings-raspa]
+[aiida-tutorials.pages--2019_molsim_school_Amsterdam--theoretical--settings-raspa]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2019_molsim_school_Amsterdam/theoretical/settings-raspa.po
 source_file = locale/pages/2019_molsim_school_Amsterdam/theoretical/settings-raspa.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2019_molsim_school_Amsterdam--theoretical--geometric-properties]
+[aiida-tutorials.pages--2019_molsim_school_Amsterdam--theoretical--geometric-properties]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2019_molsim_school_Amsterdam/theoretical/geometric-properties.po
 source_file = locale/pages/2019_molsim_school_Amsterdam/theoretical/geometric-properties.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2019_molsim_school_Amsterdam--theoretical--multiply-uc]
+[aiida-tutorials.pages--2019_molsim_school_Amsterdam--theoretical--multiply-uc]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2019_molsim_school_Amsterdam/theoretical/multiply-uc.po
 source_file = locale/pages/2019_molsim_school_Amsterdam/theoretical/multiply-uc.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2019_molsim_school_Amsterdam--theoretical--charged-adsorbates]
+[aiida-tutorials.pages--2019_molsim_school_Amsterdam--theoretical--charged-adsorbates]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2019_molsim_school_Amsterdam/theoretical/charged-adsorbates.po
 source_file = locale/pages/2019_molsim_school_Amsterdam/theoretical/charged-adsorbates.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2019_molsim_school_Amsterdam--theoretical--502-mofs]
+[aiida-tutorials.pages--2019_molsim_school_Amsterdam--theoretical--502-mofs]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2019_molsim_school_Amsterdam/theoretical/502-mofs.po
 source_file = locale/pages/2019_molsim_school_Amsterdam/theoretical/502-mofs.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2019_MARVEL_Psik_MaX--index]
+[aiida-tutorials.pages--2019_MARVEL_Psik_MaX--index]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2019_MARVEL_Psik_MaX/index.po
 source_file = locale/pages/2019_MARVEL_Psik_MaX/index.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2019_MARVEL_Psik_MaX--sections--appendix_restarting_calculations]
+[aiida-tutorials.pages--2019_MARVEL_Psik_MaX--sections--appendix_restarting_calculations]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2019_MARVEL_Psik_MaX/sections/appendix_restarting_calculations.po
 source_file = locale/pages/2019_MARVEL_Psik_MaX/sections/appendix_restarting_calculations.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2019_MARVEL_Psik_MaX--sections--bands]
+[aiida-tutorials.pages--2019_MARVEL_Psik_MaX--sections--bands]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2019_MARVEL_Psik_MaX/sections/bands.po
 source_file = locale/pages/2019_MARVEL_Psik_MaX/sections/bands.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2019_MARVEL_Psik_MaX--sections--appendix_computer_code_setup]
+[aiida-tutorials.pages--2019_MARVEL_Psik_MaX--sections--appendix_computer_code_setup]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2019_MARVEL_Psik_MaX/sections/appendix_computer_code_setup.po
 source_file = locale/pages/2019_MARVEL_Psik_MaX/sections/appendix_computer_code_setup.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2019_MARVEL_Psik_MaX--sections--querybuilder]
+[aiida-tutorials.pages--2019_MARVEL_Psik_MaX--sections--querybuilder]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2019_MARVEL_Psik_MaX/sections/querybuilder.po
 source_file = locale/pages/2019_MARVEL_Psik_MaX/sections/querybuilder.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2019_MARVEL_Psik_MaX--sections--verdi_cmdline]
+[aiida-tutorials.pages--2019_MARVEL_Psik_MaX--sections--verdi_cmdline]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2019_MARVEL_Psik_MaX/sections/verdi_cmdline.po
 source_file = locale/pages/2019_MARVEL_Psik_MaX/sections/verdi_cmdline.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2019_MARVEL_Psik_MaX--sections--appendix_workflow_logic]
+[aiida-tutorials.pages--2019_MARVEL_Psik_MaX--sections--appendix_workflow_logic]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2019_MARVEL_Psik_MaX/sections/appendix_workflow_logic.po
 source_file = locale/pages/2019_MARVEL_Psik_MaX/sections/appendix_workflow_logic.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2019_MARVEL_Psik_MaX--sections--calculations]
+[aiida-tutorials.pages--2019_MARVEL_Psik_MaX--sections--calculations]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2019_MARVEL_Psik_MaX/sections/calculations.po
 source_file = locale/pages/2019_MARVEL_Psik_MaX/sections/calculations.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2019_MARVEL_Psik_MaX--sections--appendix_input_validation]
+[aiida-tutorials.pages--2019_MARVEL_Psik_MaX--sections--appendix_input_validation]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2019_MARVEL_Psik_MaX/sections/appendix_input_validation.po
 source_file = locale/pages/2019_MARVEL_Psik_MaX/sections/appendix_input_validation.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2019_MARVEL_Psik_MaX--sections--setup]
+[aiida-tutorials.pages--2019_MARVEL_Psik_MaX--sections--setup]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2019_MARVEL_Psik_MaX/sections/setup.po
 source_file = locale/pages/2019_MARVEL_Psik_MaX/sections/setup.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2019_MARVEL_Psik_MaX--sections--appendix_queries]
+[aiida-tutorials.pages--2019_MARVEL_Psik_MaX--sections--appendix_queries]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2019_MARVEL_Psik_MaX/sections/appendix_queries.po
 source_file = locale/pages/2019_MARVEL_Psik_MaX/sections/appendix_queries.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2019_MARVEL_Psik_MaX--sections--workflows]
+[aiida-tutorials.pages--2019_MARVEL_Psik_MaX--sections--workflows]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2019_MARVEL_Psik_MaX/sections/workflows.po
 source_file = locale/pages/2019_MARVEL_Psik_MaX/sections/workflows.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2019_MARVEL_Psik_MaX--sections--verdi_shell]
+[aiida-tutorials.pages--2019_MARVEL_Psik_MaX--sections--verdi_shell]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2019_MARVEL_Psik_MaX/sections/verdi_shell.po
 source_file = locale/pages/2019_MARVEL_Psik_MaX/sections/verdi_shell.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2019_MARVEL_Psik_MaX--notebooks--querybuilder-tutorial]
+[aiida-tutorials.pages--2019_MARVEL_Psik_MaX--notebooks--querybuilder-tutorial]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2019_MARVEL_Psik_MaX/notebooks/querybuilder-tutorial.po
 source_file = locale/pages/2019_MARVEL_Psik_MaX/notebooks/querybuilder-tutorial.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2017_ICTP--index]
+[aiida-tutorials.pages--2017_ICTP--index]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2017_ICTP/index.po
 source_file = locale/pages/2017_ICTP/index.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2018_EPFL_molsim--index]
+[aiida-tutorials.pages--2018_EPFL_molsim--index]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2018_EPFL_molsim/index.po
 source_file = locale/pages/2018_EPFL_molsim/index.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2018_EPFL_molsim--tutorial--queries]
+[aiida-tutorials.pages--2018_EPFL_molsim--tutorial--queries]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2018_EPFL_molsim/tutorial/queries.po
 source_file = locale/pages/2018_EPFL_molsim/tutorial/queries.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2018_EPFL_molsim--tutorial--verdi-commands]
+[aiida-tutorials.pages--2018_EPFL_molsim--tutorial--verdi-commands]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2018_EPFL_molsim/tutorial/verdi-commands.po
 source_file = locale/pages/2018_EPFL_molsim/tutorial/verdi-commands.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2018_EPFL_molsim--tutorial--python-interface]
+[aiida-tutorials.pages--2018_EPFL_molsim--tutorial--python-interface]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2018_EPFL_molsim/tutorial/python-interface.po
 source_file = locale/pages/2018_EPFL_molsim/tutorial/python-interface.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2018_EPFL_molsim--tutorial--calculations]
+[aiida-tutorials.pages--2018_EPFL_molsim--tutorial--calculations]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2018_EPFL_molsim/tutorial/calculations.po
 source_file = locale/pages/2018_EPFL_molsim/tutorial/calculations.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2018_EPFL_molsim--tutorial--preparation]
+[aiida-tutorials.pages--2018_EPFL_molsim--tutorial--preparation]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2018_EPFL_molsim/tutorial/preparation.po
 source_file = locale/pages/2018_EPFL_molsim/tutorial/preparation.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2018_EPFL_molsim--screening--import]
+[aiida-tutorials.pages--2018_EPFL_molsim--screening--import]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2018_EPFL_molsim/screening/import.po
 source_file = locale/pages/2018_EPFL_molsim/screening/import.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2018_EPFL_molsim--screening--geometry]
+[aiida-tutorials.pages--2018_EPFL_molsim--screening--geometry]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2018_EPFL_molsim/screening/geometry.po
 source_file = locale/pages/2018_EPFL_molsim/screening/geometry.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2018_EPFL_molsim--screening--export]
+[aiida-tutorials.pages--2018_EPFL_molsim--screening--export]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2018_EPFL_molsim/screening/export.po
 source_file = locale/pages/2018_EPFL_molsim/screening/export.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2018_EPFL_molsim--screening--ranking]
+[aiida-tutorials.pages--2018_EPFL_molsim--screening--ranking]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2018_EPFL_molsim/screening/ranking.po
 source_file = locale/pages/2018_EPFL_molsim/screening/ranking.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2018_EPFL_molsim--screening--methane-loading]
+[aiida-tutorials.pages--2018_EPFL_molsim--screening--methane-loading]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2018_EPFL_molsim/screening/methane-loading.po
 source_file = locale/pages/2018_EPFL_molsim/screening/methane-loading.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2018_EPFL_molsim--screening--screening]
+[aiida-tutorials.pages--2018_EPFL_molsim--screening--screening]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2018_EPFL_molsim/screening/screening.po
 source_file = locale/pages/2018_EPFL_molsim/screening/screening.pot
 source_lang = en
 type = PO
 
-[aiida-tutorial-zh.pages--2016_MARVEL_Psik_MaX--index]
+[aiida-tutorials.pages--2016_MARVEL_Psik_MaX--index]
 file_filter = docs/locales/<lang>/LC_MESSAGES/pages/2016_MARVEL_Psik_MaX/index.po
 source_file = locale/pages/2016_MARVEL_Psik_MaX/index.pot
 source_lang = en
